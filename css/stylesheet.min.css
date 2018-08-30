@@ -1,0 +1,1621 @@
+body {
+  font: 1.1rem/1.6 Roboto, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto, sans-serif;
+  font-weight: bold
+}
+
+h1 {
+  margin-bottom: 1.5rem
+}
+h2 {
+  margin-bottom: 1rem
+}
+h3 {
+  margin-bottom: 0.5rem
+}
+
+a:active,
+a:focus,
+a:hover,
+a:link,
+a:visited {
+  color: #777;
+  outline: none;
+  text-decoration: none
+}
+
+
+
+/* *********************** INDEX *********************** */
+
+/* ***** MENU ***** */
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  margin-bottom: 3.05rem
+}
+
+.navbar-brand {   /* Logo */
+  font: 1.5rem Roboto, sans-serif;
+  font-weight: bold
+}
+
+.navbar-toggler {   /* Button */
+  font-size: 1rem;
+  padding: 0.7rem
+}
+
+.navbar .ml-auto {   /* Collapsed content */
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem
+}
+
+.navbar .nav-link:last-of-type {
+  padding-right: 0
+}
+
+.navbar-light .navbar-nav .nav-link {   /* Menu items */
+  color: rgba(0, 0, 0, 0.9)
+}
+
+.navbar-light .navbar-nav a[href^="/ygeia/"]:focus,
+.navbar-light .navbar-nav a[href^="/ygeia/"]:hover,
+.navbar-light .navbar-nav a[href^="/ygeia/"]:active,
+.navbar-light .navbar-nav a[href^="/ygeia/"].active,
+#healthmenu .active {
+  color: #008000
+}
+.navbar-light .navbar-nav a[href^="/omorfia/"]:focus,
+.navbar-light .navbar-nav a[href^="/omorfia/"]:hover,
+.navbar-light .navbar-nav a[href^="/omorfia/"]:active,
+.navbar-light .navbar-nav a[href^="/omorfia/"].active,
+#beautymenu .active {
+  color: #FF8C00
+}
+
+.sidemenu p {
+  font-weight: bold
+}
+
+#beautymenu p:last-of-type {
+  margin-top: 2rem
+}
+
+
+
+/* ***** MAIN ***** */
+
+/* Decorative lines */
+
+.articles p,
+.barticles p,
+.bsh-articles .card,
+.cover p,
+.harticles p,
+.hsh-articles .card,
+.related p,
+.related p,
+.sh-articles .card {
+  position: relative
+}
+
+.articles div:not(:last-of-type) p:last-of-type:after,
+.barticles .col-lg-4:first-of-type p:before,
+.barticles div:not(:last-of-type) p:last-of-type:after,
+.bsh-articles .card:not(:last-of-type):after,
+.cover div:not(:last-of-type) p:last-of-type:after,
+.cover div:nth-of-type(2) p:first-of-type:after,
+.harticles .col-lg-4:first-of-type p:before,
+.harticles div:not(:last-of-type) p:last-of-type:after,
+.hsh-articles .card:not(:last-of-type):after,
+.related div:not(:last-of-type) p:last-of-type:after,
+.sh-articles .card:not(:last-of-type):after {
+  background-color: rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  bottom: -26px;   /*-22px*/
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0
+}
+
+.sh-articles .card:not(:last-of-type):after,   /* Lines between short article items */
+.bsh-articles .card:not(:last-of-type):after,
+.hsh-articles .card:not(:last-of-type):after {
+  bottom: -5px
+}
+
+
+
+/* Cover */
+
+.cover div:nth-of-type(2) {
+  margin-bottom: 2.7rem;
+  margin-top: 2.9rem
+}
+
+.cover div:nth-of-type(2) p:first-of-type + a img {
+  margin-top: 2.9rem
+}
+
+.cover a h1 {
+  color: #000;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem
+}
+
+.cover a h2 {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem
+}
+
+.cover a[href^="/ygeia/"]:focus h1,
+.cover a[href^="/ygeia/"]:hover h1,
+.cover a[href^="/ygeia/"]:active h1,
+.cover a[href^="/ygeia/"]:focus h2,
+.cover a[href^="/ygeia/"]:hover h2,
+.cover a[href^="/ygeia/"]:active h2 {
+  color: #008000
+}
+.cover a[href^="/omorfia/"]:focus h1,
+.cover a[href^="/omorfia/"]:hover h1,
+.cover a[href^="/omorfia/"]:active h1,
+.cover a[href^="/omorfia/"]:focus h2,
+.cover a[href^="/omorfia/"]:hover h2,
+.cover a[href^="/omorfia/"]:active h2 {
+  color: #FF8C00
+}
+
+
+
+
+/* Articles */
+
+.articles {
+  margin-top: 5.5rem
+}
+
+.articles .col-12 {    /* Distance between article items */
+  margin-bottom: 2.9rem
+}
+
+.articles .col-12:first-of-type {
+  margin-top: 1.5rem
+}
+
+.articles a h3 {
+  color: #000;
+  font-size: 1.6rem;
+  margin-top: 1rem
+}
+
+.articles .col-12 a[href^="/ygeia/"]:focus h3,
+.articles .col-12 a[href^="/ygeia/"]:hover h3,
+.articles .col-12 a[href^="/ygeia/"]:active h3 {
+  color: #008000
+}
+.articles .col-12 a[href^="/omorfia/"]:focus h3,
+.articles .col-12 a[href^="/omorfia/"]:hover h3,
+.articles .col-12 a[href^="/omorfia/"]:active h3 {
+  color: #FF8C00
+}
+
+
+
+/* Ads */
+
+.container-fluid {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  border-top: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  margin-bottom: 6.6rem;
+  margin-top: 2.9rem;
+  padding: 3rem
+}
+
+
+
+/* Short articles */
+
+.sh-articles .card {
+  border: 0;
+  margin-bottom: 2.9rem
+}
+
+.sh-articles .card:first-of-type {
+  margin-top: 2rem
+}
+
+.sh-articles img {   /* Distance between images and text */
+  height: auto;
+  margin-bottom: 1rem;
+  max-width: 100%
+}
+
+.sh-articles a[href^="/ygeia/"]:focus h3,
+.sh-articles a[href^="/ygeia/"]:hover h3,
+.sh-articles a[href^="/ygeia/"]:active h3 {
+  color: #008000
+}
+.sh-articles a[href^="/omorfia/"]:focus h3,
+.sh-articles a[href^="/omorfia/"]:hover h3,
+.sh-articles a[href^="/omorfia/"]:active h3 {
+  color: #FF8C00
+}
+
+
+
+/* Carousel */
+
+.carousel-container {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  border-top: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  margin-bottom: 6.6rem;
+  margin-top: 2.8rem;
+  padding-bottom: 2.4rem;
+  padding-top: 3rem
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.41);
+  font-weight: bold;
+  padding-bottom: .5rem
+}
+
+
+
+
+
+
+/* Footer */
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  padding-bottom: 0.6rem;
+  padding-top: 1rem
+}
+
+footer .col-12:nth-of-type(2) p {   /* Distance between portfolio link and edge of page */
+  margin-bottom: 0
+}
+
+#top {   /* Button */
+  bottom: 1.4rem;
+  display: none;
+  position: fixed;
+  right: 0.9rem;
+  z-index: 1
+}
+
+#top span {
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  padding: 0.7rem
+}
+
+#top:hover span {
+  color: rgba(51, 51, 51, .5)
+}
+
+
+
+
+
+/* *********************** CATEGORIES *********************** */
+
+/* ***** MAIN ***** */
+
+.navbar .d-lg-none {   /* Submenus with article links */
+  margin-left: 0.6rem;
+  margin-top: 0
+}
+
+.navbar .d-lg-none a:not(:last-of-type) {   /* Submenu items */
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem
+}
+
+.navbar .nav-link:last-of-type {
+  margin-top: 0.5rem
+}
+
+.navbar .nav-link:last-of-type + .d-lg-none {   /* Beauty sidemenu: distance from menu bottom */
+  margin-bottom: 0.6rem
+}
+
+.navbar .d-lg-none + .nav-link {   /* Health sidemenu: distance from beauty item */
+  margin-top: 1.2rem
+}
+
+article figure {  /* Main page image */
+  margin-bottom: 5.8rem
+}
+
+figure figcaption {
+  margin-top: 1rem
+}
+
+
+
+/* Short articles */
+
+.bsh-articles,
+.hsh-articles {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem
+}
+
+.bsh-articles .card,
+.hsh-articles .card {
+  border: 0;
+  margin-bottom: 2.98rem;    /* Distance between short article items */
+}
+
+.bsh-articles .card:first-of-type,
+.hsh-articles .card:first-of-type {
+  margin-top: 0
+}
+
+.hsh-articles img,          /* Distance between images and text */
+.bsh-articles img {
+  margin-bottom: 1rem
+}
+
+.bsh-articles img,
+.hsh-articles img {         /* Distance between images and text */
+  height: auto;
+  margin-bottom: 1rem;
+  max-width: 100%
+}
+
+.hsh-articles a[href^="/ygeia/"]:focus h3,
+.hsh-articles a[href^="/ygeia/"]:hover h3,
+.hsh-articles a[href^="/ygeia/"]:active h3,
+.bsh-articles a[href^="/ygeia/"]:focus h3,
+.bsh-articles a[href^="/ygeia/"]:hover h3,
+.bsh-articles a[href^="/ygeia/"]:active h3 {
+  color: #008000
+}
+.hsh-articles a[href^="/omorfia/"]:focus h3,
+.hsh-articles a[href^="/omorfia/"]:hover h3,
+.hsh-articles a[href^="/omorfia/"]:active h3,
+.bsh-articles a[href^="/omorfia/"]:focus h3,
+.bsh-articles a[href^="/omorfia/"]:hover h3,
+.bsh-articles a[href^="/omorfia/"]:active h3 {
+  color: #FF8C00
+}
+
+
+
+/* Articles */
+
+.barticles,
+.harticles {
+  margin-top: 2.5rem
+}
+
+.harticles div,          /* Distance between article items */
+.barticles div {
+  margin-bottom: 2.9rem
+}
+
+.barticles a h3,
+.harticles a h3 {
+  color: #000;
+  font-size: 1.6rem;
+  margin-top: 1rem
+}
+
+.harticles .col-12 a[href^="/ygeia/"]:focus h3,
+.harticles .col-12 a[href^="/ygeia/"]:hover h3,
+.harticles .col-12 a[href^="/ygeia/"]:active h3,
+.barticles .col-12 a[href^="/ygeia/"]:focus h3,
+.barticles .col-12 a[href^="/ygeia/"]:hover h3,
+.barticles .col-12 a[href^="/ygeia/"]:active h3 {
+  color: #008000
+}
+.harticles .col-12 a[href^="/omorfia/"]:focus h3,
+.harticles .col-12 a[href^="/omorfia/"]:hover h3,
+.harticles .col-12 a[href^="/omorfia/"]:active h3,
+.barticles .col-12 a[href^="/omorfia/"]:focus h3,
+.barticles .col-12 a[href^="/omorfia/"]:hover h3,
+.barticles .col-12 a[href^="/omorfia/"]:active h3 {
+  color: #FF8C00
+}
+
+
+
+/* Load more button */
+
+.harticles .col-md-6 {
+  display: none;  /* Letting the script show 10 links at a time */
+}
+
+.load-more {
+  background-color: #228B22;
+  border: 1px solid #228B22;
+  border-radius: 0.25rem;
+  color: #FFF;
+  display: block;
+  margin: 1rem auto 10rem;
+  padding: 0.7rem 2rem;
+  text-align: center
+}
+
+.load-more:focus,
+.load-more:hover,
+.load-more:active {
+  cursor: pointer
+}
+
+
+
+
+/* *********************** ARTICLES *********************** */
+
+/* ***** ARTICLE ***** */
+
+.breadcrumbs {
+  margin-bottom: 1.5rem;
+  margin-top: -.2rem
+}
+
+.breadcrumbs ol {
+  padding-left: 0
+}
+
+.breadcrumbs li {
+  display: inline-block
+}
+
+.breadcrumbs a[href^="/index"]:focus,
+.breadcrumbs a[href^="/index"]:hover,
+.breadcrumbs a[href^="/index"]:active,
+.breadcrumbs a[href^="/index"].active {
+  color: rgba(0, 0, 0, 0.9)
+}
+.breadcrumbs a[href^="/ygeia/"]:focus,
+.breadcrumbs a[href^="/ygeia/"]:hover,
+.breadcrumbs a[href^="/ygeia/"]:active,
+.breadcrumbs a[href^="/ygeia/"].active {
+  color: #008000
+}
+.breadcrumbs a[href^="/omorfia/"]:focus,
+.breadcrumbs a[href^="/omorfia/"]:hover,
+.breadcrumbs a[href^="/omorfia/"]:active,
+.breadcrumbs a[href^="/omorfia/"].active {
+  color: #FF8C00
+}
+
+article h2 {
+  margin-bottom: 1.5rem
+}
+
+article h3 {
+  margin-bottom: 1rem
+}
+
+/*  article h2 + .articleitem h3,
+article h2 + h3 {
+  margin-top: -1rem
+}
+*/
+
+.lead {
+  margin-bottom: 1.5rem
+}
+
+
+
+/* Last update */
+
+.updates {
+  font-style: italic
+}
+
+
+
+/* Social media buttons */
+
+.a2a_kit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem
+}
+
+.a2a_kit a:nth-of-type(2) {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem
+}
+
+
+
+/* Table of contents - TOC */
+
+.contents {
+  margin-bottom: 4rem;
+  margin-top: 4.1rem
+}
+
+.contents .card-link + .card-link {
+  margin-left: 0
+}
+
+.contents h5 {
+  margin-bottom: 1rem
+}
+
+.contents a {
+  display: block;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem
+}
+
+.contents a:last-of-type {
+  margin-bottom: 0
+}
+
+#htoc a:active,
+#htoc a:focus,
+#htoc a:hover {
+  color: #008000
+}
+#btoc a:active,
+#btoc a:focus,
+#btoc a:hover {
+  color: #FF8C00
+}
+
+
+
+/* Offset for ToC links */
+
+.articlegroup h2:before {
+  content: "";
+  display: block;
+  height: 40px;   /* fixed header height */
+  margin: -40px 0 0;   /* negative fixed header height */
+}
+
+
+
+/* Introductory paragraphs */
+
+.intro {
+  margin-top: 3.5rem
+}
+
+
+
+/* Links in article content */
+
+article p a[href^="/ygeia"]:focus,
+article p a[href^="/ygeia"]:hover,
+article p a[href^="/ygeia"]:active {
+  color: #008000
+}
+article p a[href^="/omorfia"]:focus,
+article p a[href^="/omorfia"]:hover,
+article p a[href^="/omorfia"]:active {
+  color: #FF8C00
+}
+
+
+
+/* Blockquotes */
+
+.beautyblock,
+.healthblock {
+  font-style: italic;
+  font-size: 1.6rem;
+  /*padding: 1.5rem;*/
+  margin: 8rem auto
+}
+
+
+
+/* Footnotes */
+
+.footnote {
+  font-style: italic
+}
+
+
+
+/* ARTICLE PARTS */
+
+.articlegroup {
+  margin-top: 5.35rem
+}
+
+.articleitem {
+  margin-top: 3.5rem
+}
+
+.semispace {
+  margin-top: 1rem !important
+}
+
+.space {
+  margin-top: 2rem !important
+}
+
+.extraspace {
+  margin-top: 2.5rem !important
+}
+
+.ultraspace {
+  margin-top: 3rem !important
+}
+
+.xultraspace {
+  margin-top: 3.5rem !important
+}
+
+
+
+/* INFORMATION BUTTONS */
+
+.info-content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+.articlegroup > .info {
+  margin-top: 3.7rem
+}
+
+.articleitem > .info {
+  margin-bottom: 3.8rem;
+  margin-top: 1.35rem
+}
+
+.articlegroup > .info,
+.articleitem:last-of-type > .info {
+  margin-bottom: 5.55rem
+}
+
+.info > a {
+  border-radius: 0.25rem;
+  color: #FFF;
+  display: block;
+  padding: 0.7rem 1rem;
+  text-align: center
+}
+
+.info > a + div {
+  border-top: 0;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  margin-top: -.3rem
+}
+
+.info .card-body {
+  padding: 1.5rem 1.5rem 1rem
+}
+
+.info .card-body p {
+  margin-bottom: 0.8rem
+}
+
+.hinfo > a {
+  background-color: #228B22;
+  border: 1px solid #228B22
+}
+
+.hinfo > a + div {
+  border: 1px solid #228B22
+}
+
+.binfo > a {
+  background-color: #FF8C00;
+  border: 1px solid #FF8C00
+}
+
+.binfo > a + div {
+  border: 1px solid #FF8C00
+}
+
+
+
+/* Groups of information buttons */
+
+.articlebtns .info {
+  margin-top: 0.5rem
+}
+
+
+
+/* LISTS */
+
+/* Lists for ingredients etc */
+
+p ~ ul.blist {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 0
+}
+
+/* Lists with square dots */
+
+.ulsquare p,
+.ulsquare span {
+  /* Paragraphs that look like list-items */
+  display: list-item;
+  list-style-type: square;
+  margin-left: 17px
+}
+
+.ulsquare p:first-of-type:not(.noul),
+.ulsquare span:first-of-type {
+  margin-top: 0.8rem
+}
+
+.ulsquare > p.noul {        /* Paragraphs that don't look like list-items */
+  display: block;   /* To add margins */
+  margin-bottom: 0.5rem;
+  margin-left: 0
+}
+
+
+/* Lists with greek letters */
+
+.ulgreek {
+  list-style-type: lower-greek;
+  padding-left: 20px
+}
+
+
+/* Ingredients lists */
+
+p ~ ul.blist li:first-of-type {
+  float: left
+}
+
+p ~ ul.blist li:not(:first-child) {
+  margin-left: 3.8rem
+}
+
+
+
+/* Το ξέρατε ότι... */
+
+article .card:last-of-type {
+  margin-top: 5.6rem
+}
+
+
+
+/* ***** RELATED ARTICLES ***** */
+
+.related {
+  margin-top: 6.2rem
+}
+
+.related div {
+  margin-bottom: 1.85rem
+}
+
+.related div:first-of-type {
+  margin-top: 1.5rem
+}
+
+.related a h3 {
+  color: #000;
+  font-size: 1.6rem;
+  margin-top: 1rem
+}
+
+.related a[href^="/ygeia/"]:focus h3,
+.related a[href^="/ygeia/"]:hover h3,
+.related a[href^="/ygeia/"]:active h3,
+.related a[href^="/ygeia/"].active h3 {
+  color: #008000
+}
+.related a[href^="/omorfia/"]:focus h3,
+.related a[href^="/omorfia/"]:hover h3,
+.related a[href^="/omorfia/"]:active h3,
+.related a[href^="/omorfia/"].active h3 {
+  color: #FF8C00
+}
+
+
+
+/* *********************** CATALOG  *********************** */
+
+#ab {
+  background-color: #228B22;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  text-align: center
+}
+
+#ab a,
+#ab p {
+  border: 1px solid transparent;
+  color: #FFF;
+  display: inline-block;
+  width: 2.5rem
+}
+
+#ab a:active,
+#ab a:focus,
+#ab a:hover {
+  border-color: #FFF
+}
+
+#ab p {
+  color: #A9A9A9
+}
+
+#ab ~ div {
+  margin-bottom: 6rem;
+  margin-top: 6rem
+}
+
+#ab ~ div p {
+  font-size: 1.5rem;
+  font-weight: bold
+}
+
+#ab ~ div a {
+  display: block;
+  margin-top: 0.8rem
+}
+
+#ab ~ div a:active,
+#ab ~ div a:focus,
+#ab ~ div a:hover {
+  color: #008000
+}
+
+
+
+
+
+
+/* ============================== MEDIA QUERIES ================================ */
+
+
+
+@media (min-width: 576px) {
+
+  /* *********************** INDEX *********************** */
+
+  /* ***** MENU ***** */
+
+  .navbar {
+    margin-bottom: 3.35rem
+  }
+
+  /* ***** MAIN ***** */
+
+  /* Decorative lines */
+
+  .articles div:not(:last-of-type) p:last-of-type:after,
+  .articles div:nth-of-type(2) p:before,
+  .barticles div:not(:last-of-type) p:last-of-type:after,
+  .barticles div:nth-of-type(2) p:before,
+  .bsh-articles .card:not(:last-of-type):after,
+  .cover div:not(:last-of-type) p:last-of-type:after,
+  .cover div:nth-of-type(2) p:first-of-type:after,
+  .harticles div:not(:last-of-type) p:last-of-type:after,
+  .harticles div:nth-of-type(2) p:before,
+  .hsh-articles .card:not(:last-of-type):after,
+  .sh-articles .card:not(:last-of-type):after {
+    bottom: -35px
+  }
+
+  .articles div:nth-of-type(2) p:before {
+    top: -289px
+  }
+
+  .bsh-articles .card:not(:last-of-type):after,
+  .hsh-articles .card:not(:last-of-type):after,
+  .sh-articles .card:not(:last-of-type):after {
+    bottom: -20px
+  }
+
+
+
+  /* Cover */
+
+  .cover div:nth-of-type(2) {
+    margin-bottom: 3.5rem;
+    margin-top: 3.9rem
+  }
+
+  .cover div:nth-of-type(2) p:first-of-type + a img {
+    margin-top: 3.9rem
+  }
+
+
+
+  /* Articles */
+
+  .articles {
+    margin-top: 8rem
+  }
+
+  .articles .col-12 {      /* Distance between article items */
+    margin-bottom: 3.9rem
+  }
+
+
+
+
+  /* Ads */
+
+  .container-fluid {
+    margin-bottom: 9.2rem;
+    margin-top: 4.4rem
+  }
+
+
+
+  /* Short articles */
+
+  .sh-articles .card:first-of-type {
+    margin-top: 2.3rem
+  }
+
+  .sh-articles .card {      /* Distance between short article items */
+    margin-bottom: 3.9rem
+  }
+
+
+
+  /* Carousel */
+
+  .carousel-container {
+    margin-bottom: 9.2rem;
+    margin-top: 4.25rem
+  }
+
+
+
+  /* Footer */
+
+  #top {
+    right: 2rem
+  }
+
+
+
+  /* *********************** CATEGORIES *********************** */
+
+  /* ***** MAIN ***** */
+
+  article figure {   /* Main page image */
+    margin-bottom: 6.5rem
+  }
+
+
+
+  /* Short articles */
+
+  .bsh-articles,
+  .hsh-articles {
+    margin-bottom: 4rem
+  }
+
+  .hsh-articles .card,      /* Distance between short articles items */
+  .bsh-articles .card {
+    margin-bottom: 3.9rem
+  }
+
+
+
+  /* Articles */
+
+  .harticles div,          /* Distance between articles items */
+  .barticles div {
+    margin-bottom: 3.9rem
+  }
+
+
+
+  /* *********************** ARTICLES *********************** */
+
+  /* ***** RELATED ARTICLES ***** */
+
+  .related {
+    margin-top: 6.85rem
+  }
+
+  .related div {
+    margin-bottom: 2.15rem
+  }
+
+  .related div:first-of-type {
+    margin-top: 1.65rem
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+  body {
+    font-size: 1.2rem
+  }
+
+
+
+  /* *********************** INDEX *********************** */
+
+  /* ***** MENU ***** */
+
+  .navbar {
+    margin-bottom: 3.65rem
+  }
+
+
+
+  /* ***** MAIN ***** */
+
+  /* Decorative lines */
+
+  .cover div:first-of-type p:last-of-type:after,
+  .cover div:nth-of-type(2) p:first-of-type:after {
+    bottom: -36px
+  }
+
+  .bsh-articles .card:not(:last-of-type):after,
+  .hsh-articles .card:not(:last-of-type):after,
+  .sh-articles .card:not(:last-of-type):after {
+    background-color: rgba(0, 0, 0, .125);   /* #e5e5e5 */
+    bottom: -36px;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0
+  }
+
+  .articles .col-12:nth-of-type(even):before,
+  .barticles .col-12:nth-of-type(even):before,
+  .cover div:last-of-type:before,
+  .harticles .col-12:nth-of-type(even):before,
+  .related .col-12:nth-of-type(even):before {
+    background-color: rgba(0, 0, 0, .125);  /* #e5e5e5 */
+    bottom: 3%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 1px
+  }
+
+  .cover div:last-of-type:before {
+    bottom: 5%;
+    left: 0;
+    top: 4px
+  }
+
+  .articles .col-12:nth-of-type(even):before {
+    left: 0
+  }
+
+  .barticles .col-12:nth-of-type(even):before,
+  .harticles .col-12:nth-of-type(even):before,
+  .related .col-12:nth-of-type(even):before {
+    left: 0
+  }
+
+  .articles div:not(:last-of-type) p:last-of-type:after,
+  .articles div:nth-of-type(2) p:before,
+  .barticles .col-12:first-of-type:after,
+  .barticles div:not(:last-of-type) p:last-of-type:after,
+  .barticles div:nth-of-type(2) p:before,
+  .cover div:nth-of-type(2) p:first-of-type::after,
+  .cover div:nth-of-type(n+2) p:last-of-type:after,
+  .harticles .col-12:first-of-type:after,
+  .harticles div:not(:last-of-type) p:last-of-type:after,
+  .harticles div:nth-of-type(2) p:before,
+  .related div:not(:last-of-type) p:last-of-type:after {
+    display: none
+  }
+
+
+
+  /* Cover */
+
+  .cover div:nth-of-type(2) {
+    margin-bottom: 2.1rem;
+    margin-top: 4.4rem
+  }
+
+  .cover div:nth-of-type(2) p:first-of-type + a img {
+    margin-top: 2.5rem
+  }
+
+  .cover div:last-of-type {
+    margin-top: 4.2rem
+  }
+
+
+  /* Articles */
+
+  .articles {
+    margin-top: 6.4rem
+  }
+
+  .articles .col-12:nth-of-type(2) {
+    margin-top: 1.5rem
+  }
+
+  .articles .col-12 {        /* Distance between article items */
+    margin-bottom: 3.5rem
+  }
+
+  .articles .col-12:last-of-type {
+    display: none;      /* Hide last item so that items-with-text number is even */
+  }
+
+
+  /* Ads */
+
+  .container-fluid {
+    margin-bottom: 9.7rem;
+    margin-top: 5.4rem
+  }
+
+
+
+  /* Short articles */
+
+  .sh-articles .card {      /* Distance between short article items */
+    margin-bottom: 4.7rem
+  }
+
+  .sh-articles .card:first-of-type {
+    margin-top: 2.6rem
+  }
+
+  .sh-articles img {        /* Distance between images and text */
+    margin-bottom: 0;
+    margin-right: 1rem;
+    max-width: 250px
+  }
+
+
+
+  /* Carousel */
+
+  .carousel-container {
+    margin-bottom: 9.8rem;
+    margin-top: 5.4rem
+  }
+
+
+
+  /* Footer */
+
+  footer .col-12:first-of-type p {   /* Limit distance between copyright column and bottom of page */
+    margin-bottom: 0
+  }
+
+  #top {
+    right: 2.4rem
+  }
+
+
+
+  /* *********************** CATEGORIES *********************** */
+
+  /* ***** MAIN ***** */
+
+  article figure {      /* Main page image */
+    margin-bottom: 7.1rem
+  }
+
+
+
+  /* Short articles */
+
+  .bsh-articles,
+  .hsh-articles {
+    margin-bottom: 5.1rem
+  }
+
+  .hsh-articles .card,      /* Distance between short article items */
+  .bsh-articles .card {
+    margin-bottom: 4.7rem
+  }
+
+  .hsh-articles img,      /* Distance between images and text */
+  .bsh-articles img {
+    margin-bottom: 0;
+    margin-right: 1rem;
+    max-width: 250px
+  }
+
+
+
+  /* Articles */
+
+  .barticles div,
+  .harticles div {      /* Distance between article items */
+    margin-bottom: 3.45rem
+  }
+
+
+
+  /* *********************** ARTICLES *********************** */
+
+  /* ARTICLE PARTS */
+
+  .articlegroup {
+    margin-top: 5.95rem
+  }
+  .articleitem {
+    margin-top: 4.1rem
+  }
+
+
+
+  /* INFORMATION BUTTONS */
+
+  .articlegroup > .info {
+    margin-top: 4.3rem
+  }
+  .articleitem > .info {
+    margin-bottom: 4.4rem;
+    margin-top: 1.45rem
+  }
+  .articlegroup > .info,
+  .articleitem:last-of-type > .info {
+    margin-bottom: 6.2rem
+  }
+
+
+
+  /* ΤΟ ΞΕΡΑΤΕ ΟΤΙ... */
+
+  article .card:last-of-type {
+    margin-top: 6.2rem
+  }
+
+
+
+  /* ***** RELATED ARTICLES ***** */
+
+  .related {
+    margin-top: 7.45rem
+  }
+
+  .related div {
+    margin-bottom: 2.45rem
+  }
+
+  .related div:nth-of-type(-n+2) {
+    margin-top: 1.8rem
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+
+  /* *********************** INDEX *********************** */
+
+  .navbar .d-lg-none + .nav-link,
+  .navbar .nav-link:last-of-type {
+    margin-top: 0
+  }
+
+  .navbar .ml-auto {
+    margin-bottom: 0;
+    margin-top: 0
+  }
+
+
+
+  /* ***** MAIN ***** */
+
+  /* Decorative lines */
+
+  .cover div:first-of-type p:last-of-type::after,
+  .cover div:nth-of-type(2) p:first-of-type::after {
+    bottom: -44px
+  }
+
+  .articles .col-12:nth-of-type(4):before,
+  .related .col-lg-4:nth-of-type(4):before {
+    display: none
+  }
+
+  .articles .col-12:nth-of-type(odd):not(:first-of-type):not(:nth-of-type(7)):before,
+  .related .col-12:nth-of-type(odd):not(:first-of-type):before {
+    background-color: rgba(0, 0, 0, .125);   /* #e5e5e5 */
+    bottom: 5%;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px
+  }
+
+
+
+  /* Cover */
+
+  .cover div:nth-of-type(2) {
+    margin-bottom: 2.1rem;
+    margin-top: 5.4rem
+  }
+
+  /* .cover div:nth-of-type(2) p:first-of-type a img {
+    margin-top:0;
+  } */
+
+  .cover div:last-of-type {
+    margin-top: 5.1rem
+  }
+
+
+
+  /* Articles */
+
+  .articles {
+    margin-top: 7rem
+  }
+
+  .articles .col-12:nth-of-type(3) {
+    margin-top: 1.5rem
+  }
+
+  .articles .col-12:last-of-type {   /* Show the previously hidden item */
+    display: block
+  }
+
+
+
+
+  /* Ad */
+
+  .container-fluid {
+    margin-bottom: 10.5rem;
+    margin-top: 6rem
+  }
+
+
+
+  /* Short articles */
+
+  .sh-articles img {
+    max-width: 344px
+  }
+
+
+
+  /* Carousel */
+
+  .carousel-container {
+    margin-bottom: 10.5rem;
+    margin-top: 6rem
+  }
+
+
+
+  /* Footer */
+
+  #top {
+    right: 1.9rem
+  }
+
+
+
+  /* *********************** CATEGORIES *********************** */
+
+  /* Sidemenu */
+
+  .sidemenu {
+    margin-top: -.3rem
+  }
+
+  .sidemenu a {
+    display: block;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem
+  }
+
+  .sidemenu a:first-of-type {
+    margin-top: 0
+  }
+
+  #beautymenu .heading:last-of-type {
+    margin-top: 2.5rem
+  }
+
+  #healthmenu a:active,
+  #healthmenu a:focus,
+  #healthmenu a:hover {
+    color: #008000
+  }
+  #beautymenu a:active,
+  #beautymenu a:focus,
+  #beautymenu a:hover {
+    color: #FF8C00
+  }
+
+
+
+  /* Short articles */
+
+  .bsh-articles,
+  .hsh-articles {
+    margin-bottom: 5.7rem
+  }
+
+  .bsh-articles img,
+  .hsh-articles img {
+    max-width: 344px
+  }
+
+
+
+  /* *********************** ARTICLES *********************** */
+
+  /* ARTICLE PARTS */
+
+  .articlegroup {
+    margin-top: 6.55rem
+  }
+
+  .articleitem {
+    margin-top: 4.7rem
+  }
+
+
+
+  /* INFORMATION BUTTONS */
+
+  .articlegroup > .info {
+    margin-top: 4.95rem
+  }
+
+  .articleitem > .info {
+    margin-bottom: 5rem
+  }
+
+  .articlegroup > .info,
+  .articleitem:last-of-type > .info {
+    margin-bottom: 6.8rem
+  }
+
+
+
+  /* ΤΟ ΞΕΡΑΤΕ ΟΤΙ... */
+
+  article .card:last-of-type {
+    margin-top: 6.8rem
+  }
+
+  .related div:nth-of-type(3) {
+    margin-top: 1.8rem
+  }
+
+
+
+  /* *********************** CATALOG  *********************** */
+
+  #healthmenu p {
+    margin-top: 0.15rem
+  }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+  /* *********************** INDEX *********************** */
+
+  /* ***** MAIN ***** */
+
+  /* Decorative lines */
+
+  .cover div:first-of-type p:last-of-type:after {
+    display: none
+  }
+
+  .cover div:first-of-type:before {
+    background-color: rgba(0, 0, 0, .125);   /* #e5e5e5 */
+    bottom: 5%;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px
+  }
+
+
+
+  /* Cover */
+
+  .cover div:nth-of-type(n+2) {
+    margin-top: 0
+  }
+
+
+
+
+  /* Short articles */
+
+  .sh-articles img {
+    max-width: 449px
+  }
+
+
+  /* Footer */
+
+  #top {
+    right: 3.7%
+  }
+
+
+
+  /* *********************** CATEGORIES *********************** */
+
+  /* Short articles */
+
+  .bsh-articles img,
+  .hsh-articles img {
+    max-width: 449px
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: 1800px) {
+
+  /* Carousel */
+
+  /* .carousel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  } */
+
+  .owl-carousel {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1800px
+  }
+
+}
