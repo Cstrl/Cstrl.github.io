@@ -134,6 +134,10 @@ a:visited {
   bottom: -5px
 }
 
+.related div:not(:last-of-type) p:last-of-type:after {
+  bottom: -18px
+}
+
 
 
 /* Cover */
@@ -938,6 +942,10 @@ article .card:last-of-type {
     bottom: -20px
   }
 
+  .related div:not(:last-of-type) p:last-of-type:after {
+    bottom: -22px
+  }
+
 
 
   /* Cover */
@@ -1180,7 +1188,12 @@ article .card:last-of-type {
 
   .cover .tip h2 {
     font-size: 2.1rem;
-    margin-bottom: 1.2rem
+    margin-bottom: 1.45rem
+  }
+  @-moz-document url-prefix() {
+    .cover .tip h2 {
+      margin-bottom: 1.15rem
+    }
   }
 
 
@@ -1410,8 +1423,15 @@ article .card:last-of-type {
   }
 
   .cover .tip h2 {
-    font-size: 2.1rem
+    font-size: 2.1rem;
+    margin-bottom: 1.7rem
   }
+  @-moz-document url-prefix() {
+    .cover .tip h2 {
+      margin-bottom: 1.25rem
+    }
+  }
+
 
 
 
@@ -1605,12 +1625,35 @@ article .card:last-of-type {
 
   .cover a h1 {
     font-size: 2.9rem;
-    margin-bottom: 1.3rem;
-    margin-top: 1.95rem;
+    margin-bottom: 1rem;
+    margin-top: 1.65rem;
+  }
+  @-moz-document url-prefix() {
+    .cover a h1 {
+      margin-bottom: 1.2rem;
+      margin-top: 2.05rem;
+    }
   }
 
   .cover a > h2 {
-    font-size: 1.6rem
+    font-size: 1.6rem;
+    margin-bottom: .4rem;
+    margin-top: 1.1rem
+  }
+  @-moz-document url-prefix() {
+    .cover a > h2 {
+      margin-bottom: .5rem;
+      margin-top: 1.2rem;
+    }
+  }
+
+  .cover div:nth-of-type(2) p:first-of-type + a img {
+    margin-top: 2.35rem;
+  }
+  @-moz-document url-prefix() {
+    .cover div:nth-of-type(2) p:first-of-type + a img {
+      margin-top: 2.5rem;
+    }
   }
 
   .cover .tip h2 {
