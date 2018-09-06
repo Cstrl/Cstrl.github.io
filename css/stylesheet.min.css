@@ -114,7 +114,7 @@ a:visited {
 .cover div:not(:last-of-type) p:last-of-type:after,
 .cover div:nth-of-type(2) p:first-of-type:after,
 .harticles .col-lg-4:first-of-type p:before,
-.harticles div:not(:last-of-type) p:last-of-type:after,
+.harticles .col-md-6:not(:last-of-type) p:last-of-type:after,
 .hsh-articles .card:not(:last-of-type):after,
 .related div:not(:last-of-type) p:last-of-type:after,
 .sh-articles .card:not(:last-of-type):after {
@@ -131,7 +131,7 @@ a:visited {
 .sh-articles .card:not(:last-of-type):after,   /* Lines between short article items */
 .bsh-articles .card:not(:last-of-type):after,
 .hsh-articles .card:not(:last-of-type):after {
-  bottom: -5px
+  bottom: -12px
 }
 
 .related div:not(:last-of-type) p:last-of-type:after {
@@ -253,6 +253,9 @@ a:visited {
   max-width: 100%
 }
 
+.sh-articles a h3 {
+  color: #000
+}
 .sh-articles a[href^="/ygeia/"]:focus h3,
 .sh-articles a[href^="/ygeia/"]:hover h3,
 .sh-articles a[href^="/ygeia/"]:active h3 {
@@ -379,6 +382,11 @@ figure figcaption {
 .bsh-articles .card:first-of-type,
 .hsh-articles .card:first-of-type {
   margin-top: 0
+}
+
+.hsh-articles a h3,          /* Distance between images and text */
+.bsh-articles a h3 {
+  color: #000
 }
 
 .hsh-articles img,          /* Distance between images and text */
@@ -926,7 +934,7 @@ article .card:last-of-type {
   .bsh-articles .card:not(:last-of-type):after,
   .cover div:not(:last-of-type) p:last-of-type:after,
   .cover div:nth-of-type(2) p:first-of-type:after,
-  .harticles div:not(:last-of-type) p:last-of-type:after,
+  .harticles .col-md-6:not(:last-of-type) p:last-of-type:after,
   .harticles div:nth-of-type(2) p:before,
   .hsh-articles .card:not(:last-of-type):after,
   .sh-articles .card:not(:last-of-type):after {
@@ -1154,11 +1162,15 @@ article .card:last-of-type {
   .cover div:nth-of-type(2) p:first-of-type::after,
   .cover div:nth-of-type(n+2) p:last-of-type:after,
   .harticles .col-12:first-of-type:after,
-  .harticles div:not(:last-of-type) p:last-of-type:after,
+  .harticles .col-md-6:not(:last-of-type) p:last-of-type:after,
   .harticles div:nth-of-type(2) p:before,
   .related div:not(:last-of-type) p:last-of-type:after {
     display: none
   }
+
+
+
+
 
 
 
