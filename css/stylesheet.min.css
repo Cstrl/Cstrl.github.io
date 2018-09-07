@@ -1503,10 +1503,6 @@ article .card:last-of-type {
 
   /* Sidemenu */
 
-  .sidemenu {
-    margin-top: -.3rem
-  }
-
   .sidemenu a {
     display: block;
     margin-bottom: 0.25rem;
