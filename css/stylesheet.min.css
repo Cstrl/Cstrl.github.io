@@ -63,7 +63,8 @@ a:visited {
 }
 
 .navbar-light .navbar-nav .nav-link {   /* Menu items */
-  color: rgba(0, 0, 0, 0.9)
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1.2rem
 }
 
 .navbar-light .navbar-nav a[href^="/ygeia/"]:focus,
@@ -82,12 +83,15 @@ a:visited {
 }
 
 .sidemenu p {
+  font-size: 1.3rem;
   font-weight: bold
 }
 
 #beautymenu p:last-of-type {
-  margin-top: 2rem
+  margin-top: 2.5rem
 }
+
+
 
 
 
@@ -356,7 +360,7 @@ footer .col-12:nth-of-type(2) p {   /* Distance between portfolio link and edge 
 }
 
 article figure {  /* Main page image */
-  margin-bottom: 5.8rem
+  /* margin-bottom: 5.8rem */
 }
 
 figure figcaption {
@@ -550,16 +554,20 @@ article h2 + h3 {
 
 /* Social media buttons */
 
-.a2a_kit {
+article > .a2a_kit {
   display: flex;
   justify-content: center;
   margin-bottom: 2.5rem;
   margin-top: 2.5rem
 }
 
-.a2a_kit a:nth-of-type(2) {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem
+article > .a2a_kit a:nth-of-type(2) {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem
+}
+
+.a2a_default_style .a2a_svg {
+  border-radius: 0 !important
 }
 
 
@@ -616,7 +624,7 @@ article h2 + h3 {
 /* Introductory paragraphs */
 
 .intro {
-  margin-top: 3.5rem
+  margin-top: 5rem
 }
 
 
@@ -684,6 +692,10 @@ article p a[href^="/omorfia"]:active {
 
 .xultraspace {
   margin-top: 3.5rem !important
+}
+
+.xxultraspace {
+  margin-top: 4rem !important
 }
 
 
@@ -1033,7 +1045,7 @@ article .card:last-of-type {
   /* ***** MAIN ***** */
 
   article figure {   /* Main page image */
-    margin-bottom: 6.5rem
+    /* margin-bottom: 6.5rem */
   }
 
 
@@ -1283,7 +1295,7 @@ article .card:last-of-type {
   /* ***** MAIN ***** */
 
   article figure {      /* Main page image */
-    margin-bottom: 7.1rem
+    margin-bottom: 5.2rem
   }
 
 
@@ -1319,6 +1331,51 @@ article .card:last-of-type {
 
 
   /* *********************** ARTICLES *********************** */
+
+  /* Last update */
+
+  .updates {
+    margin-bottom: 2rem; /* Making up for the hidden a2a buttons and their top/bottom margin */
+  }
+
+
+  /* Social media buttons */
+
+  .col-md-2 .a2a_kit {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem
+  }
+
+  .col-md-2 .a2a_kit a:nth-of-type(2) {
+    margin-bottom: .5rem;
+    margin-top: .5rem
+  }
+
+  .a2a_default_style .a2a_svg {
+    /* border-radius: 100% !important; */
+    height: 37px;
+    width: 37px;
+    /* background-color: #000 !important */
+  }
+
+  .a2a_default_style .a2a_svg svg {
+    margin: 3px
+  }
+
+
+
+
+
+  /* Table of contents - TOC */
+
+  .contents {
+    margin-top: 0
+  }
+
 
   /* ARTICLE PARTS */
 
@@ -1700,6 +1757,29 @@ article .card:last-of-type {
   .bsh-articles img,
   .hsh-articles img {
     max-width: 449px
+  }
+
+
+
+  /* *********************** ARTICLES *********************** */
+
+
+  /* Social media buttons */
+
+  .a2a_default_style .a2a_svg {
+    height: 45px;
+    width: 45px
+  }
+
+  .a2a_default_style .a2a_svg svg {
+    margin: 5px
+  }
+
+
+  /* Introductory paragraphs */
+
+  .intro {
+    margin-top: 5rem
   }
 
 }
