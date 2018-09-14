@@ -228,15 +228,29 @@ a:visited {
 
 
 
-/* Ads */
+/* Large article */
 
-.container-fluid {
+.lg-article {
   border-bottom: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
   border-top: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
   margin-bottom: 6.6rem;
   margin-top: 2.9rem;
-  padding: 3rem
+  padding-bottom: 3rem;
+  padding-top: 3rem
 }
+
+.lg-article p {
+  align-items: center;
+  background-color: #228B22;
+  color: #FFF;
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 2rem 1rem
+}
+
+
 
 
 
@@ -1002,13 +1016,16 @@ article .card:last-of-type {
 
 
 
-  /* Ads */
+  /* Large article */
 
-  .container-fluid {
+  .lg-article {
     margin-bottom: 9.2rem;
     margin-top: 4.4rem
   }
 
+  .lg-article p {
+    padding: 2.5rem
+  }
 
 
   /* Short articles */
@@ -1242,11 +1259,17 @@ article .card:last-of-type {
   }
 
 
-  /* Ads */
 
-  .container-fluid {
+  /* Large article */
+
+  .lg-article {
     margin-bottom: 9.7rem;
     margin-top: 5.4rem
+  }
+
+  .lg-article p {
+    padding: .5rem;
+    overflow: hidden
   }
 
 
@@ -1522,11 +1545,16 @@ article .card:last-of-type {
 
 
 
-  /* Ad */
+  /* Large article */
 
-  .container-fluid {
+  .lg-article {
     margin-bottom: 10.5rem;
     margin-top: 6rem
+  }
+
+  .lg-article p {
+    font-size: 1.5rem;
+    padding: 1rem
   }
 
 
@@ -1730,6 +1758,14 @@ article .card:last-of-type {
     font-size: 2rem;
     margin-bottom: 1.3rem;
     margin-top: -.2rem
+  }
+
+
+
+  /* Large article */
+
+  .lg-article p {
+    padding: 1.5rem
   }
 
 
