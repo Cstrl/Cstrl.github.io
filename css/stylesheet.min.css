@@ -53,9 +53,15 @@ a.active {
 }
 
 .navbar-light .navbar-toggler {   /* Button */
-  color: #666;
+  border-color: rgba(0, 0, 0, .125);
+  color: #696969;
   font-size: 1rem;
   padding: 0.7rem
+}
+.navbar-light .navbar-toggler:focus,
+.navbar-light .navbar-toggler:hover,
+.navbar-light .navbar-toggler:active {
+  color: #393939
 }
 
 .navbar .ml-auto {   /* Collapsed content */
@@ -68,7 +74,7 @@ a.active {
 }
 
 .navbar-light .navbar-nav .nav-link {   /* Menu items */
-  color: rgba(0, 0, 0, 0.9);
+  color: #696969;
   font-size: 1.2rem
 }
 
@@ -244,15 +250,17 @@ a.active {
   padding-top: 3rem
 }
 
-.lg-article p {
-  align-items: center;
+.lg-article .flex-column {
   background-color: #008000; /* #228B22 -- not enough contrast */
   color: #FFF;
-  display: flex;
   font-size: 1.25rem;
-  justify-content: center;
   margin-bottom: 0;
-  padding: 2rem 1rem
+  padding: 3.5rem 1rem
+}
+
+.lg-article p {
+  margin-bottom: 0;
+  margin-top: 1rem
 }
 
 
@@ -337,15 +345,15 @@ footer .col-12:nth-of-type(2) p {   /* Distance between portfolio link and edge 
 
 #top span {
   background-color: #FFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, .125);
   border-radius: 0.25rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: #696969;
   font-size: 1.2rem;
   padding: 0.7rem
 }
 
 #top:hover span {
-  color: rgba(51, 51, 51, .5)
+  color: #393939
 }
 
 
@@ -760,7 +768,7 @@ article p a[href^="/omorfia"]:active {
   margin-bottom: 0.8rem
 }
 
-.hinfo > a {
+.hinfo > a:link {
   background-color: #008000; /* #228B22 -- not enough contrast */
   border: 1px solid #008000; /* #228B22 -- not enough contrast */
 }
@@ -1030,7 +1038,6 @@ article .card:last-of-type {
 
 
 
-
   /* Large article */
 
   .lg-article {
@@ -1038,9 +1045,11 @@ article .card:last-of-type {
     margin-top: 4.4rem
   }
 
-  .lg-article p {
-    padding: 2.5rem
+  .lg-article .flex-column {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem
   }
+
 
 
   /* Short articles */
@@ -1282,7 +1291,9 @@ article .card:last-of-type {
     margin-top: 5.4rem
   }
 
-  .lg-article p {
+  .lg-article .flex-column {
+    display: flex;
+    justify-content: center;
     padding: .5rem;
     overflow: hidden
   }
@@ -1567,8 +1578,7 @@ article .card:last-of-type {
     margin-top: 6rem
   }
 
-  .lg-article p {
-    font-size: 1.5rem;
+  .lg-article .flex-column {
     padding: 1rem
   }
 
@@ -1779,8 +1789,8 @@ article .card:last-of-type {
 
   /* Large article */
 
-  .lg-article p {
-    padding: 1.5rem
+  .lg-article .flex-column {
+    padding: 2.5rem
   }
 
 
