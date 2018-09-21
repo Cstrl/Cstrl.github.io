@@ -593,6 +593,10 @@ article > .a2a_kit a:nth-of-type(2) {
   border-radius: 0 !important
 }
 
+.col-md-2 .a2a_kit {
+  display: none
+}
+
 
 
 /* Table of contents - TOC */
@@ -620,15 +624,30 @@ article > .a2a_kit a:nth-of-type(2) {
   margin-bottom: 0
 }
 
-#htoc a:active,
-#htoc a:focus,
-#htoc a:hover {
+.htoc a:active,
+.htoc a:focus,
+.htoc a:hover {
   color: #008000
 }
-#btoc a:active,
-#btoc a:focus,
-#btoc a:hover {
+.btoc a:active,
+.btoc a:focus,
+.btoc a:hover {
   color: #EB8100
+}
+
+
+/* Second link to eidh-karkinou on karkinos */
+
+.contents ~ .contents {
+    margin-bottom: -.8rem
+}
+
+.contents ~ .contents .icon-up {
+  display: inline-block;
+  float: right;
+  font-size: 1.2rem;
+  margin-top: -.8rem;
+  transform: rotate(90deg)
 }
 
 
@@ -1114,6 +1133,15 @@ article .card:last-of-type {
 
 
 
+  /* Second link to eidh-karkinou on karkinos */
+
+  .contents ~ .contents .icon-up {
+    font-size: 1rem;
+    margin-top: 0
+  }
+
+
+
   /* *********************** ARTICLES *********************** */
 
   /* ***** RELATED ARTICLES ***** */
@@ -1449,6 +1477,17 @@ article .card:last-of-type {
   .articlegroup > .info,
   .articleitem:last-of-type > .info {
     margin-bottom: 6.2rem
+  }
+
+
+  /* Second link to eidh-karkinou on karkinos */
+
+  .contents ~ .contents {
+    margin-top: 5rem
+  }
+
+  .contents ~ .contents .icon-up {
+    font-size: 1.1rem
   }
 
 
