@@ -168,7 +168,7 @@ a.active {
 
 .cover a h1 {
   color: #000;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
   margin-top: 1.5rem
 }
@@ -176,8 +176,8 @@ a.active {
 .cover a > h2 {
   color: #000;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 1.1rem
+  margin-bottom: 0.7rem;
+  margin-top: 1.3rem
 }
 
 .cover .tip h2 {
@@ -220,10 +220,11 @@ a.active {
   margin-top: 1.5rem
 }
 
-.articles a h3 {
+.articles a h3 { /* Same font-size/margin-top/margin-bottom as categories>articles and article>related */
   color: #000;
   font-size: 1.6rem;
-  margin-top: 1rem
+  margin-bottom: 1rem;
+  margin-top: 1.5rem
 }
 
 .articles .col-12 a[href^="/ygeia/"]:focus h3,
@@ -284,8 +285,11 @@ a.active {
   max-width: 100%
 }
 
-.sh-articles a h3 {
-  color: #000
+.sh-articles a h3 {  /* Same font-size/margin-top/margin-bottom as categories>sh-articles */
+  color: #000;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  margin-top: .7rem
 }
 .sh-articles a[href^="/ygeia/"]:focus h3,
 .sh-articles a[href^="/ygeia/"]:hover h3,
@@ -417,7 +421,10 @@ figure figcaption {
 
 .hsh-articles a h3,          /* Distance between images and text */
 .bsh-articles a h3 {
-  color: #000
+  color: #000;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  margin-top: .7rem
 }
 
 .hsh-articles img,          /* Distance between images and text */
@@ -467,7 +474,8 @@ figure figcaption {
 .harticles a h3 {
   color: #000;
   font-size: 1.6rem;
-  margin-top: 1rem
+  margin-bottom: 1rem;
+  margin-top: 1.5rem
 }
 
 .harticles .col-12 a[href^="/ygeia/"]:focus h3,
@@ -906,7 +914,8 @@ article .card:last-of-type {
 .related a h3 {
   color: #000;
   font-size: 1.6rem;
-  margin-top: 1rem
+  margin-bottom: 1rem;
+  margin-top: 1.5rem
 }
 
 .related a[href^="/ygeia/"]:focus h3,
@@ -1036,10 +1045,14 @@ article .card:last-of-type {
     margin-top: 3.9rem
   }
 
+  .cover a h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.7rem
+  }
+
   .cover a > h2 {
-    font-size: 1.6rem;
-    margin-bottom: 0.75rem;
-    margin-top: 1.4rem
+    font-size: 1.7rem
   }
 
 
@@ -1053,6 +1066,12 @@ article .card:last-of-type {
 
   .articles .col-12 {      /* Distance between article items */
     margin-bottom: 3.9rem
+  }
+
+  .articles a h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.7rem
   }
 
 
@@ -1080,6 +1099,12 @@ article .card:last-of-type {
   .sh-articles .card {      /* Distance between short article items */
     margin-bottom: 3.9rem
   }
+
+  .sh-articles a h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.4rem;
+    margin-top: .9rem
+}
 
 
 
@@ -1122,6 +1147,13 @@ article .card:last-of-type {
     margin-bottom: 3.9rem
   }
 
+  .hsh-articles a h3,
+  .bsh-articles a h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.4rem;
+    margin-top: .9rem
+}
+
 
 
   /* Articles */
@@ -1129,6 +1161,13 @@ article .card:last-of-type {
   .harticles div,          /* Distance between articles items */
   .barticles div {
     margin-bottom: 3.9rem
+  }
+
+  .barticles a h3,
+  .harticles a h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.7rem
   }
 
 
@@ -1156,6 +1195,12 @@ article .card:last-of-type {
 
   .related div:first-of-type {
     margin-top: 1.65rem
+  }
+
+  .related a h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.7rem;
   }
 
 }
@@ -1271,13 +1316,13 @@ article .card:last-of-type {
   }
 
   .cover a h1 {
+    font-size: 2.5rem;
     margin-bottom: 1.4rem;
     margin-top: 1.9rem;
   }
 
   .cover a > h2 {
-    margin-bottom: .5rem;
-    margin-top: 1.2rem;
+    font-size: 1.6rem
   }
 
   .cover .tip h2 {
@@ -1308,6 +1353,11 @@ article .card:last-of-type {
 
   .articles .col-12:last-of-type {
     display: none;      /* Hide last item so that items-with-text number is even */
+  }
+
+  .articles a h3 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem
   }
 
 
@@ -1342,6 +1392,11 @@ article .card:last-of-type {
     margin-bottom: 0;
     margin-right: 1rem;
     max-width: 250px
+  }
+
+  .sh-articles a h3 {
+    margin-bottom: 1.2rem;
+    margin-top: 0
   }
 
 
@@ -1396,6 +1451,11 @@ article .card:last-of-type {
     max-width: 250px
   }
 
+  .hsh-articles a h3, .bsh-articles a h3 {
+    margin-bottom: 1.2rem;
+    margin-top: 0
+  }
+
 
 
   /* Articles */
@@ -1403,6 +1463,11 @@ article .card:last-of-type {
   .barticles div,
   .harticles div {      /* Distance between article items */
     margin-bottom: 3.45rem
+  }
+
+  .barticles a h3, .harticles a h3 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem
   }
 
 
@@ -1514,6 +1579,11 @@ article .card:last-of-type {
     margin-top: 1.8rem
   }
 
+  .related a h3 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem
+  }
+
 }
 
 
@@ -1574,10 +1644,6 @@ article .card:last-of-type {
 
   .cover div:last-of-type {
     margin-top: 5.2rem
-  }
-
-  .cover a > h2 {
-    font-size: 1.7rem
   }
 
   .cover .tip h2 {
@@ -1786,27 +1852,7 @@ article .card:last-of-type {
   }
 
   .cover a h1 {
-    font-size: 2.9rem;
-    margin-bottom: 1.05rem;
-    margin-top: 1.75rem;
-  }
-  @-moz-document url-prefix() {
-    .cover a h1 {
-      margin-bottom: 1.45rem;
-      margin-top: 2rem;
-    }
-  }
-
-  .cover a > h2 {
-    font-size: 1.6rem;
-    margin-bottom: .6rem;
-    margin-top: 1.2rem
-  }
-  @-moz-document url-prefix() {
-    .cover a > h2 {
-      margin-bottom: .7rem;
-      margin-top: 1.4rem;
-    }
+    font-size: 2.8rem
   }
 
   .cover div:nth-of-type(2) p:first-of-type + a img {
