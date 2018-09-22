@@ -129,7 +129,7 @@ a.active {
 .cover div:not(:last-of-type) p:last-of-type:after,
 .cover div:nth-of-type(2) p:first-of-type:after,
 .harticles .col-lg-4:first-of-type p:before,
-.harticles .col-md-6:not(:last-of-type) p:last-of-type:after,
+.harticles .col-md-6.dec-line p:last-of-type:after, /* .dec-line is added by Load More script */
 .hsh-articles .card:not(:last-of-type):after,
 .related div:not(:last-of-type) p:last-of-type:after,
 .sh-articles .card:not(:last-of-type):after {

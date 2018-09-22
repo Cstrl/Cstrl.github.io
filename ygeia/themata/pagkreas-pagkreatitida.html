@@ -2,6 +2,29 @@
 <html lang="el">
 
 <head>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-75235701-1', {
+      'storage': 'none'
+    });
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="web-author" content="Chryssa Triantafyllopoulou">
@@ -22,6 +45,34 @@
     document.createElement("picture");
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" async></script>
+
+
+  <!-- Cookie consent -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function() {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#dcdcdc",
+            "text": "#333333"
+          },
+          "button": {
+            "background": "#696969",
+            "text": "#ffffff"
+          }
+        },
+        "theme": "classic",
+        "content": {
+          "message": "Χρησιμοποιώντας αυτό τον ιστότοπο, αποδέχεστε τη χρήση των cookies όπως αυτή περιγράφεται στους",
+          "dismiss": "Συμφωνώ",
+          "link": 'όρους χρήσης',
+          "href": "/plhrofories.html"
+        }
+      })
+    });
+  </script>
 
 </head>
 
@@ -272,7 +323,8 @@
                   <h2>Γενικές συμβουλές</h2>
 
                   <p>Οι πικρές ουσίες διεγείρουν την έκκριση χολής και παγκρέατος και λειτουργούν θεραπευτικά. Οι πικρές ουσίες υποστηρίζουν τη δημιουργία αλκαλικού υψηλού PH στον οργανισμό , δρουν ενάντια στην υπεροξείδωση του σώματος και δυναμώνουν το
-                    συκώτι.</p>
+                    συκώτι.
+                  </p>
                   <p>Το κάπνισμα πρέπει να αποφεύγεται.</p>
                   <p>Πρέπει να πίνετε πολλά υγρά για αποφυγή αφυδάτωσης, ώστε να αποφεύγεται ο ερεθισμός και πόνος του παγκρέατος.</p>
                   <p>Βοηθά η λήψη συμπληρωμάτων παγκρεατικών ενζύμων.</p>
