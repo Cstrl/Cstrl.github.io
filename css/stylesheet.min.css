@@ -38,6 +38,32 @@ a.active {
 
 
 
+/* Intrinsic ratio technique -- Prevent content jumping when lazy loading images */
+
+.img-container {
+  background-color: #DCDCDC;
+  display: block;  /* Anchor tags are often the containers of imgs */
+  height: 0;
+  padding-bottom: 64.53%;
+  position: relative;
+  overflow: hidden
+}
+.img-container img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2
+}
+
+.lg-article .img-container {
+  padding-bottom: 129.07%
+}
+
+
+
+
 /* *********************** INDEX *********************** */
 
 /* ***** MENU ***** */
@@ -162,7 +188,7 @@ a.active {
   margin-top: 2.9rem
 }
 
-.cover div:nth-of-type(2) p:first-of-type + a img {
+.cover div:nth-of-type(2) p:first-of-type + a {
   margin-top: 2.9rem
 }
 
@@ -240,6 +266,7 @@ a.active {
 
 
 
+
 /* Large article */
 
 .lg-article {
@@ -263,7 +290,6 @@ a.active {
   margin-bottom: 0;
   margin-top: 1rem
 }
-
 
 
 
@@ -301,6 +327,8 @@ a.active {
 .sh-articles a[href^="/omorfia/"]:active h3 {
   color: #EB8100
 }
+
+
 
 
 
@@ -458,6 +486,8 @@ figure figcaption {
 
 
 
+
+
 /* Articles */
 
 .barticles,
@@ -494,6 +524,8 @@ figure figcaption {
 .barticles .col-12 a[href^="/omorfia/"]:active h3 {
   color: #EB8100
 }
+
+
 
 
 
@@ -604,6 +636,7 @@ article > .a2a_kit a:nth-of-type(2) {
 .col-md-2 .a2a_kit {
   display: none
 }
+
 
 
 
@@ -897,6 +930,7 @@ article .card:last-of-type {
 
 
 
+
 /* ***** RELATED ARTICLES ***** */
 
 .related {
@@ -930,6 +964,7 @@ article .card:last-of-type {
 .related a[href^="/omorfia/"].active h3 {
   color: #EB8100
 }
+
 
 
 
@@ -992,6 +1027,19 @@ article .card:last-of-type {
 
 @media (min-width: 576px) {
 
+
+  /* Intrinsic ratio technique -- prevent content jumping when lazy loading images */
+
+  .img-container {
+    padding-bottom: 64.51%
+  }
+
+  .lg-article .img-container {
+    padding-bottom: 88.24%
+  }
+
+
+
   /* *********************** INDEX *********************** */
 
   /* ***** MENU ***** */
@@ -1041,7 +1089,7 @@ article .card:last-of-type {
     margin-top: 3.9rem
   }
 
-  .cover div:nth-of-type(2) p:first-of-type + a img {
+  .cover div:nth-of-type(2) p:first-of-type + a {
     margin-top: 3.9rem
   }
 
@@ -1054,7 +1102,6 @@ article .card:last-of-type {
   .cover a > h2 {
     font-size: 1.7rem
   }
-
 
 
 
@@ -1073,6 +1120,7 @@ article .card:last-of-type {
     margin-bottom: 1.2rem;
     margin-top: 1.7rem
   }
+
 
 
 
@@ -1104,7 +1152,7 @@ article .card:last-of-type {
     font-size: 1.7rem;
     margin-bottom: 1.4rem;
     margin-top: .9rem
-}
+  }
 
 
 
@@ -1129,9 +1177,9 @@ article .card:last-of-type {
 
   /* ***** MAIN ***** */
 
-  article figure {   /* Main page image */
-    /* margin-bottom: 6.5rem */
-  }
+  /* article figure {   /* Main page image
+     margin-bottom: 6.5rem
+  } */
 
 
 
@@ -1152,7 +1200,7 @@ article .card:last-of-type {
     font-size: 1.7rem;
     margin-bottom: 1.4rem;
     margin-top: .9rem
-}
+  }
 
 
 
@@ -1172,6 +1220,7 @@ article .card:last-of-type {
 
 
 
+
   /* Second link to eidh-karkinou on karkinos */
 
   .contents ~ .contents .icon-up {
@@ -1182,6 +1231,7 @@ article .card:last-of-type {
 
 
   /* *********************** ARTICLES *********************** */
+
 
   /* ***** RELATED ARTICLES ***** */
 
@@ -1215,6 +1265,30 @@ article .card:last-of-type {
   body {
     font-size: 1.1rem
   }
+
+
+  /* Intrinsic ratio technique -- prevent content jumping when lazy loading images */
+
+  .img-container {
+    padding-bottom: 64.55%
+  }
+
+  .cover .col-xl-6 .img-container,
+  figure .img-container {
+    padding-bottom: 64.49%
+  }
+
+  .lg-article .img-container {
+    padding-bottom: 93.48%
+  }
+
+  .sh-articles .img-container,
+  .hsh-articles .img-container,
+  .bsh-articles .img-container {
+    padding-bottom: 100%
+  }
+
+
 
 
 
@@ -1307,7 +1381,7 @@ article .card:last-of-type {
     margin-top: 4.4rem
   }
 
-  .cover div:nth-of-type(2) p:first-of-type + a img {
+  .cover div:nth-of-type(2) p:first-of-type + a {
     margin-top: 2.5rem
   }
 
@@ -1593,6 +1667,31 @@ article .card:last-of-type {
 
 @media (min-width: 992px) {
 
+
+  /* Intrinsic ratio technique -- prevent content jumping when lazy loading images */
+
+  .cover .col-xl-6 .img-container {
+    padding-bottom: 64.52%
+  }
+
+  .cover .col-xl-3 .img-container {
+    padding-bottom: 64.44%
+  }
+
+  .articles .img-container,
+  .related .img-container {
+   padding-bottom: 64.48%
+  }
+
+  .lg-article .img-container {
+   padding-bottom: 77.42%
+  }
+
+  .sh-articles .img-container {
+   padding-bottom: 64.53%
+  }
+
+
   /* *********************** INDEX *********************** */
 
   .navbar .d-lg-none + .nav-link,
@@ -1822,6 +1921,43 @@ article .card:last-of-type {
     font-size: 1.2rem
   }
 
+
+  /* Intrinsic ratio technique -- prevent content jumping when lazy loading images */
+
+  .cover .col-xl-6 .img-container {
+     padding-bottom: 64.44%
+  }
+
+  .cover .col-xl-3 .img-container {
+    padding-bottom: 64.71%
+  }
+
+  .articles .img-container,
+  .related .img-container {
+   padding-bottom: 64.57%
+  }
+
+  .lg-article .img-container {
+   padding-bottom: 70.27%
+  }
+
+  .sh-articles .img-container {
+   padding-bottom: 64.59%
+  }
+
+  .hsh-articles .img-container,
+  .bsh-articles .img-container {
+    padding-bottom: 64.53%
+  }
+
+  .harticles .img-container.
+  .barticles .img-container,
+  figure .img-container {
+   padding-bottom: 64.48%
+  }
+
+
+
   /* *********************** INDEX *********************** */
 
   /* ***** MAIN ***** */
@@ -1855,11 +1991,11 @@ article .card:last-of-type {
     font-size: 2.8rem
   }
 
-  .cover div:nth-of-type(2) p:first-of-type + a img {
+  .cover div:nth-of-type(2) p:first-of-type + a {
     margin-top: 1.75rem;
   }
   @-moz-document url-prefix() {
-    .cover div:nth-of-type(2) p:first-of-type + a img {
+    .cover div:nth-of-type(2) p:first-of-type + a {
       margin-top: 1.85rem;
     }
   }
