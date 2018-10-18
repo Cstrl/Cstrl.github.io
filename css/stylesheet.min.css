@@ -15,9 +15,11 @@ h6 {
 h1 {
   margin-bottom: 1.5rem
 }
+
 h2 {
   margin-bottom: 1rem
 }
+
 h3 {
   margin-bottom: 0.5rem
 }
@@ -27,6 +29,7 @@ a:link,
 a:visited {
   color: #696969
 }
+
 a:focus,
 a:hover,
 a:active,
@@ -42,12 +45,14 @@ a.active {
 
 .img-container {
   background-color: #DCDCDC;
-  display: block;  /* Anchor tags are often the containers of imgs */
+  display: block;
+  /* Anchor tags are often the containers of imgs */
   height: 0;
   padding-bottom: 64.53%;
   position: relative;
   overflow: hidden
 }
+
 .img-container img {
   height: 100%;
   left: 0;
@@ -69,28 +74,33 @@ a.active {
 /* ***** MENU ***** */
 
 .navbar {
-  border-bottom: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  /* #e5e5e5 */
   margin-bottom: 3.05rem
 }
 
-.navbar-brand {   /* Logo */
+.navbar-brand {
+  /* Logo */
   font: 1.5rem Roboto, sans-serif;
   font-weight: bold
 }
 
-.navbar-light .navbar-toggler {   /* Button */
+.navbar-light .navbar-toggler {
+  /* Button */
   border-color: rgba(0, 0, 0, .125);
   color: #696969;
   font-size: 1rem;
   padding: 0.7rem
 }
+
 .navbar-light .navbar-toggler:focus,
 .navbar-light .navbar-toggler:hover,
 .navbar-light .navbar-toggler:active {
   color: #393939
 }
 
-.navbar .ml-auto {   /* Collapsed content */
+.navbar .ml-auto {
+  /* Collapsed content */
   margin-bottom: 1.5rem;
   margin-top: 1.5rem
 }
@@ -99,7 +109,8 @@ a.active {
   padding-right: 0
 }
 
-.navbar-light .navbar-nav .nav-link {   /* Menu items */
+.navbar-light .navbar-nav .nav-link {
+  /* Menu items */
   color: #696969;
   font-size: 1.2rem
 }
@@ -111,6 +122,7 @@ a.active {
 #healthmenu .active {
   color: #008000
 }
+
 .navbar-light .navbar-nav a[href^="/omorfia/"]:focus,
 .navbar-light .navbar-nav a[href^="/omorfia/"]:hover,
 .navbar-light .navbar-nav a[href^="/omorfia/"]:active,
@@ -155,12 +167,15 @@ a.active {
 .cover div:not(:last-of-type) p:last-of-type:after,
 .cover div:nth-of-type(2) p:first-of-type:after,
 .harticles .col-lg-4:first-of-type p:before,
-.harticles .col-md-6.dec-line p:last-of-type:after, /* .dec-line is added by Load More script */
+.harticles .col-md-6.dec-line p:last-of-type:after,
+/* .dec-line is added by Load More script */
 .hsh-articles .card:not(:last-of-type):after,
 .related div:not(:last-of-type) p:last-of-type:after,
 .sh-articles .card:not(:last-of-type):after {
-  background-color: rgba(0, 0, 0, .125);   /* #e5e5e5 */
-  bottom: -26px;   /*-22px*/
+  background-color: rgba(0, 0, 0, .125);
+  /* #e5e5e5 */
+  bottom: -26px;
+  /*-22px*/
   content: '';
   display: block;
   height: 1px;
@@ -169,7 +184,8 @@ a.active {
   right: 0
 }
 
-.sh-articles .card:not(:last-of-type):after,   /* Lines between short article items */
+.sh-articles .card:not(:last-of-type):after,
+/* Lines between short article items */
 .bsh-articles .card:not(:last-of-type):after,
 .hsh-articles .card:not(:last-of-type):after {
   bottom: -12px
@@ -188,7 +204,7 @@ a.active {
   margin-top: 2.9rem
 }
 
-.cover div:nth-of-type(2) p:first-of-type + a {
+.cover div:nth-of-type(2) p:first-of-type+a {
   margin-top: 2.9rem
 }
 
@@ -199,7 +215,7 @@ a.active {
   margin-top: 1.5rem
 }
 
-.cover a > h2 {
+.cover a>h2 {
   color: #000;
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
@@ -220,6 +236,7 @@ a.active {
 .cover a[href^="/ygeia/"]:active h2 {
   color: #008000
 }
+
 .cover a[href^="/omorfia/"]:focus h1,
 .cover a[href^="/omorfia/"]:hover h1,
 .cover a[href^="/omorfia/"]:active h1,
@@ -238,7 +255,8 @@ a.active {
   margin-top: 5.5rem
 }
 
-.articles .col-12 {    /* Distance between article items */
+.articles .col-12 {
+  /* Distance between article items */
   margin-bottom: 2.9rem
 }
 
@@ -246,7 +264,8 @@ a.active {
   margin-top: 1.5rem
 }
 
-.articles a h3 { /* Same font-size/margin-top/margin-bottom as categories>articles and article>related */
+.articles a h3 {
+  /* Same font-size/margin-top/margin-bottom as categories>articles and article>related */
   color: #000;
   font-size: 1.6rem;
   margin-bottom: 1rem;
@@ -258,6 +277,7 @@ a.active {
 .articles .col-12 a[href^="/ygeia/"]:active h3 {
   color: #008000
 }
+
 .articles .col-12 a[href^="/omorfia/"]:focus h3,
 .articles .col-12 a[href^="/omorfia/"]:hover h3,
 .articles .col-12 a[href^="/omorfia/"]:active h3 {
@@ -270,8 +290,10 @@ a.active {
 /* Large article */
 
 .lg-article {
-  border-bottom: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
-  border-top: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  /* #e5e5e5 */
+  border-top: 1px solid rgba(0, 0, 0, .125);
+  /* #e5e5e5 */
   margin-bottom: 6.6rem;
   margin-top: 2.9rem;
   padding-bottom: 3rem;
@@ -279,7 +301,8 @@ a.active {
 }
 
 .lg-article .flex-column {
-  background-color: #008000; /* #228B22 -- not enough contrast */
+  background-color: #008000;
+  /* #228B22 -- not enough contrast */
   color: #FFF;
   font-size: 1.25rem;
   margin-bottom: 0;
@@ -305,23 +328,27 @@ a.active {
   margin-top: 2rem
 }
 
-.sh-articles img {   /* Distance between images and text */
+.sh-articles img {
+  /* Distance between images and text */
   height: auto;
   margin-bottom: 1rem;
   max-width: 100%
 }
 
-.sh-articles a h3 {  /* Same font-size/margin-top/margin-bottom as categories>sh-articles */
+.sh-articles a h3 {
+  /* Same font-size/margin-top/margin-bottom as categories>sh-articles */
   color: #000;
   font-size: 1.6rem;
   margin-bottom: 1.2rem;
   margin-top: .7rem
 }
+
 .sh-articles a[href^="/ygeia/"]:focus h3,
 .sh-articles a[href^="/ygeia/"]:hover h3,
 .sh-articles a[href^="/ygeia/"]:active h3 {
   color: #008000
 }
+
 .sh-articles a[href^="/omorfia/"]:focus h3,
 .sh-articles a[href^="/omorfia/"]:hover h3,
 .sh-articles a[href^="/omorfia/"]:active h3 {
@@ -335,8 +362,10 @@ a.active {
 /* Carousel */
 
 .carousel-container {
-  border-bottom: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
-  border-top: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  /* #e5e5e5 */
+  border-top: 1px solid rgba(0, 0, 0, .125);
+  /* #e5e5e5 */
   margin-bottom: 6.6rem;
   margin-top: 2.8rem;
   padding-bottom: 2.4rem;
@@ -357,17 +386,20 @@ a.active {
 /* Footer */
 
 footer {
-  border-top: 1px solid rgba(0, 0, 0, .125);   /* #e5e5e5 */
+  border-top: 1px solid rgba(0, 0, 0, .125);
+  /* #e5e5e5 */
   margin-top: 5rem;
   padding-bottom: 0.6rem;
   padding-top: 1rem
 }
 
-footer .col-12:nth-of-type(2) p {   /* Distance between portfolio link and edge of page */
+footer .col-12:nth-of-type(2) p {
+  /* Distance between portfolio link and edge of page */
   margin-bottom: 0
 }
 
-#top {   /* Button */
+#top {
+  /* Button */
   bottom: 1.4rem;
   display: none;
   position: fixed;
@@ -396,12 +428,14 @@ footer .col-12:nth-of-type(2) p {   /* Distance between portfolio link and edge 
 
 /* ***** MAIN ***** */
 
-.navbar .d-lg-none {   /* Submenus with article links */
+.navbar .d-lg-none {
+  /* Submenus with article links */
   margin-left: 0.6rem;
   margin-top: 0
 }
 
-.navbar .d-lg-none a:not(:last-of-type) {   /* Submenu items */
+.navbar .d-lg-none a:not(:last-of-type) {
+  /* Submenu items */
   margin-bottom: 0.25rem;
   margin-top: 0.25rem
 }
@@ -410,16 +444,14 @@ footer .col-12:nth-of-type(2) p {   /* Distance between portfolio link and edge 
   margin-top: 0.5rem
 }
 
-.navbar .nav-link:last-of-type + .d-lg-none {   /* Beauty sidemenu: distance from menu bottom */
+.navbar .nav-link:last-of-type+.d-lg-none {
+  /* Beauty sidemenu: distance from menu bottom */
   margin-bottom: 0.6rem
 }
 
-.navbar .d-lg-none + .nav-link {   /* Health sidemenu: distance from beauty item */
+.navbar .d-lg-none+.nav-link {
+  /* Health sidemenu: distance from beauty item */
   margin-top: 1.2rem
-}
-
-article figure {  /* Main page image */
-  /* margin-bottom: 5.8rem */
 }
 
 figure figcaption {
@@ -439,7 +471,8 @@ figure figcaption {
 .bsh-articles .card,
 .hsh-articles .card {
   border: 0;
-  margin-bottom: 2.98rem;    /* Distance between short article items */
+  margin-bottom: 2.98rem;
+  /* Distance between short article items */
 }
 
 .bsh-articles .card:first-of-type,
@@ -447,7 +480,8 @@ figure figcaption {
   margin-top: 0
 }
 
-.hsh-articles a h3,          /* Distance between images and text */
+.hsh-articles a h3,
+/* Distance between images and text */
 .bsh-articles a h3 {
   color: #000;
   font-size: 1.6rem;
@@ -455,13 +489,15 @@ figure figcaption {
   margin-top: .7rem
 }
 
-.hsh-articles img,          /* Distance between images and text */
+.hsh-articles img,
+/* Distance between images and text */
 .bsh-articles img {
   margin-bottom: 1rem
 }
 
 .bsh-articles img,
-.hsh-articles img {         /* Distance between images and text */
+.hsh-articles img {
+  /* Distance between images and text */
   height: auto;
   margin-bottom: 1rem;
   max-width: 100%
@@ -475,6 +511,7 @@ figure figcaption {
 .bsh-articles a[href^="/ygeia/"]:active h3 {
   color: #008000
 }
+
 .hsh-articles a[href^="/omorfia/"]:focus h3,
 .hsh-articles a[href^="/omorfia/"]:hover h3,
 .hsh-articles a[href^="/omorfia/"]:active h3,
@@ -495,7 +532,8 @@ figure figcaption {
   margin-top: 2.5rem
 }
 
-.harticles div,          /* Distance between article items */
+.harticles div,
+/* Distance between article items */
 .barticles div {
   margin-bottom: 2.9rem
 }
@@ -516,6 +554,7 @@ figure figcaption {
 .barticles .col-12 a[href^="/ygeia/"]:active h3 {
   color: #008000
 }
+
 .harticles .col-12 a[href^="/omorfia/"]:focus h3,
 .harticles .col-12 a[href^="/omorfia/"]:hover h3,
 .harticles .col-12 a[href^="/omorfia/"]:active h3,
@@ -532,12 +571,15 @@ figure figcaption {
 /* Load more button */
 
 .harticles .col-md-6 {
-  display: none;  /* Letting the script show 10 links at a time */
+  display: none;
+  /* Letting the script show 10 links at a time */
 }
 
 .load-more {
-  background-color: #008000; /* #228B22 -- not enough contrast */
-  border: 1px solid #008000; /*#228B22 -- not enough contrast */
+  background-color: #008000;
+  /* #228B22 -- not enough contrast */
+  border: 1px solid #008000;
+  /*#228B22 -- not enough contrast */
   border-radius: 0.25rem;
   color: #FFF;
   display: block;
@@ -580,6 +622,7 @@ figure figcaption {
 .breadcrumbs a[href^="/ygeia/"].active {
   color: #008000
 }
+
 .breadcrumbs a[href^="/omorfia/"]:focus,
 .breadcrumbs a[href^="/omorfia/"]:hover,
 .breadcrumbs a[href^="/omorfia/"]:active,
@@ -617,14 +660,14 @@ article h2 + h3 {
 
 /* Social media buttons */
 
-article > .a2a_kit {
+article>.a2a_kit {
   display: flex;
   justify-content: center;
   margin-bottom: 2.5rem;
   margin-top: 2.5rem
 }
 
-article > .a2a_kit a:nth-of-type(2) {
+article>.a2a_kit a:nth-of-type(2) {
   margin-left: 0.2rem;
   margin-right: 0.2rem
 }
@@ -647,7 +690,7 @@ article > .a2a_kit a:nth-of-type(2) {
   margin-top: 4.1rem
 }
 
-.contents .card-link + .card-link {
+.contents .card-link+.card-link {
   margin-left: 0
 }
 
@@ -670,6 +713,7 @@ article > .a2a_kit a:nth-of-type(2) {
 .htoc a:hover {
   color: #008000
 }
+
 .btoc a:active,
 .btoc a:focus,
 .btoc a:hover {
@@ -679,11 +723,11 @@ article > .a2a_kit a:nth-of-type(2) {
 
 /* Second link to eidh-karkinou on karkinos */
 
-.contents ~ .contents {
-    margin-bottom: -.8rem
+.contents~.contents {
+  margin-bottom: -.8rem
 }
 
-.contents ~ .contents .icon-up {
+.contents~.contents .icon-up {
   display: inline-block;
   float: right;
   font-size: 1.2rem;
@@ -698,8 +742,10 @@ article > .a2a_kit a:nth-of-type(2) {
 .articlegroup h2:before {
   content: "";
   display: block;
-  height: 40px;   /* fixed header height */
-  margin: -40px 0 0;   /* negative fixed header height */
+  height: 40px;
+  /* fixed header height */
+  margin: -40px 0 0;
+  /* negative fixed header height */
 }
 
 
@@ -719,6 +765,7 @@ article p a[href^="/ygeia"]:hover,
 article p a[href^="/ygeia"]:active {
   color: #008000
 }
+
 article p a[href^="/omorfia"]:focus,
 article p a[href^="/omorfia"]:hover,
 article p a[href^="/omorfia"]:active {
@@ -791,21 +838,21 @@ article p a[href^="/omorfia"]:active {
   padding: 1.25rem
 }
 
-.articlegroup > .info {
+.articlegroup>.info {
   margin-top: 3.7rem
 }
 
-.articleitem > .info {
+.articleitem>.info {
   margin-bottom: 3.8rem;
   margin-top: 1.35rem
 }
 
-.articlegroup > .info,
-.articleitem:last-of-type > .info {
+.articlegroup>.info,
+.articleitem:last-of-type>.info {
   margin-bottom: 5.55rem
 }
 
-.info > a {
+.info>a {
   border-radius: 0.25rem;
   color: #FFF;
   display: block;
@@ -813,7 +860,7 @@ article p a[href^="/omorfia"]:active {
   text-align: center
 }
 
-.info > a + div {
+.info>a+div {
   border-top: 0;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
@@ -828,34 +875,41 @@ article p a[href^="/omorfia"]:active {
   margin-bottom: 0.8rem
 }
 
-.hinfo > a:link {
-  background-color: #008000; /* #228B22 -- not enough contrast */
-  border: 1px solid #008000; /* #228B22 -- not enough contrast */
-}
-.hinfo > a:focus,
-.hinfo > a:hover,
-.hinfo > a:active {
-  background-color: #006400; /* #228B22 -- not enough contrast */
-  border: 1px solid #006400; /* #228B22 -- not enough contrast */
+.hinfo>a:link {
+  background-color: #008000;
+  /* #228B22 -- not enough contrast */
+  border: 1px solid #008000;
+  /* #228B22 -- not enough contrast */
 }
 
-.hinfo > a + div {
-  border: 1px solid #006400; /* #228B22 -- not enough contrast */
+.hinfo>a:focus,
+.hinfo>a:hover,
+.hinfo>a:active {
+  background-color: #006400;
+  /* #228B22 -- not enough contrast */
+  border: 1px solid #006400;
+  /* #228B22 -- not enough contrast */
+}
+
+.hinfo>a+div {
+  border: 1px solid #006400;
+  /* #228B22 -- not enough contrast */
 }
 
 
-.binfo > a {
+.binfo>a {
   background-color: #EB8100;
   border: 1px solid #EB8100
 }
-.binfo > a:focus,
-.binfo > a:hover,
-.binfo > a:active {
+
+.binfo>a:focus,
+.binfo>a:hover,
+.binfo>a:active {
   background-color: #DE7A00;
   border: 1px solid #DE7A00
 }
 
-.binfo > a + div {
+.binfo>a+div {
   border: 1px solid #DE7A00
 }
 
@@ -874,7 +928,7 @@ article p a[href^="/omorfia"]:active {
 
 /* Lists for ingredients etc */
 
-p ~ ul.blist {
+p~ul.blist {
   display: inline-block;
   list-style-type: none;
   padding-left: 0
@@ -895,8 +949,10 @@ p ~ ul.blist {
   margin-top: 0.8rem
 }
 
-.ulsquare > p.noul {        /* Paragraphs that don't look like list-items */
-  display: block;   /* To add margins */
+.ulsquare>p.noul {
+  /* Paragraphs that don't look like list-items */
+  display: block;
+  /* To add margins */
   margin-bottom: 0.5rem;
   margin-left: 0
 }
@@ -912,11 +968,11 @@ p ~ ul.blist {
 
 /* Ingredients lists */
 
-p ~ ul.blist li:first-of-type {
+p~ul.blist li:first-of-type {
   float: left
 }
 
-p ~ ul.blist li:not(:first-child) {
+p~ul.blist li:not(:first-child) {
   margin-left: 3.8rem
 }
 
@@ -958,6 +1014,7 @@ article .card:last-of-type {
 .related a[href^="/ygeia/"].active h3 {
   color: #008000
 }
+
 .related a[href^="/omorfia/"]:focus h3,
 .related a[href^="/omorfia/"]:hover h3,
 .related a[href^="/omorfia/"]:active h3,
@@ -971,7 +1028,8 @@ article .card:last-of-type {
 /* *********************** CATALOG  *********************** */
 
 #ab {
-  background-color: #008000; /* #228B22 -- not enough contrast */
+  background-color: #008000;
+  /* #228B22 -- not enough contrast */
   margin-top: 5rem;
   padding-top: 1rem;
   text-align: center
@@ -995,24 +1053,24 @@ article .card:last-of-type {
   color: #A9A9A9
 }
 
-#ab ~ div {
+#ab~div {
   margin-bottom: 6rem;
   margin-top: 6rem
 }
 
-#ab ~ div p {
+#ab~div p {
   font-size: 1.5rem;
   font-weight: bold
 }
 
-#ab ~ div a {
+#ab~div a {
   display: block;
   margin-top: 0.8rem
 }
 
-#ab ~ div a:active,
-#ab ~ div a:focus,
-#ab ~ div a:hover {
+#ab~div a:active,
+#ab~div a:focus,
+#ab~div a:hover {
   color: #008000
 }
 
@@ -1089,7 +1147,7 @@ article .card:last-of-type {
     margin-top: 3.9rem
   }
 
-  .cover div:nth-of-type(2) p:first-of-type + a {
+  .cover div:nth-of-type(2) p:first-of-type+a {
     margin-top: 3.9rem
   }
 
@@ -1099,7 +1157,7 @@ article .card:last-of-type {
     margin-top: 1.7rem
   }
 
-  .cover a > h2 {
+  .cover a>h2 {
     font-size: 1.7rem
   }
 
@@ -1111,7 +1169,8 @@ article .card:last-of-type {
     margin-top: 8rem
   }
 
-  .articles .col-12 {      /* Distance between article items */
+  .articles .col-12 {
+    /* Distance between article items */
     margin-bottom: 3.9rem
   }
 
@@ -1144,7 +1203,8 @@ article .card:last-of-type {
     margin-top: 2.3rem
   }
 
-  .sh-articles .card {      /* Distance between short article items */
+  .sh-articles .card {
+    /* Distance between short article items */
     margin-bottom: 3.9rem
   }
 
@@ -1190,7 +1250,8 @@ article .card:last-of-type {
     margin-bottom: 4rem
   }
 
-  .hsh-articles .card,      /* Distance between short articles items */
+  .hsh-articles .card,
+  /* Distance between short articles items */
   .bsh-articles .card {
     margin-bottom: 3.9rem
   }
@@ -1206,7 +1267,8 @@ article .card:last-of-type {
 
   /* Articles */
 
-  .harticles div,          /* Distance between articles items */
+  .harticles div,
+  /* Distance between articles items */
   .barticles div {
     margin-bottom: 3.9rem
   }
@@ -1223,7 +1285,7 @@ article .card:last-of-type {
 
   /* Second link to eidh-karkinou on karkinos */
 
-  .contents ~ .contents .icon-up {
+  .contents~.contents .icon-up {
     font-size: 1rem;
     margin-top: 0
   }
@@ -1314,7 +1376,8 @@ article .card:last-of-type {
   .bsh-articles .card:not(:last-of-type):after,
   .hsh-articles .card:not(:last-of-type):after,
   .sh-articles .card:not(:last-of-type):after {
-    background-color: rgba(0, 0, 0, .125);   /* #e5e5e5 */
+    background-color: rgba(0, 0, 0, .125);
+    /* #e5e5e5 */
     bottom: -36px;
     content: '';
     display: block;
@@ -1329,7 +1392,8 @@ article .card:last-of-type {
   .cover div:last-of-type:before,
   .harticles .col-12:nth-of-type(even):before,
   .related .col-12:nth-of-type(even):before {
-    background-color: rgba(0, 0, 0, .125);  /* #e5e5e5 */
+    background-color: rgba(0, 0, 0, .125);
+    /* #e5e5e5 */
     bottom: 3%;
     content: '';
     display: block;
@@ -1381,7 +1445,7 @@ article .card:last-of-type {
     margin-top: 4.4rem
   }
 
-  .cover div:nth-of-type(2) p:first-of-type + a {
+  .cover div:nth-of-type(2) p:first-of-type+a {
     margin-top: 2.5rem
   }
 
@@ -1395,7 +1459,7 @@ article .card:last-of-type {
     margin-top: 1.9rem;
   }
 
-  .cover a > h2 {
+  .cover a>h2 {
     font-size: 1.6rem
   }
 
@@ -1403,6 +1467,7 @@ article .card:last-of-type {
     font-size: 2.1rem;
     margin-bottom: 1.6rem
   }
+
   @-moz-document url-prefix() {
     .cover .tip h2 {
       margin-bottom: 1.45rem
@@ -1421,12 +1486,14 @@ article .card:last-of-type {
     margin-top: 1.5rem
   }
 
-  .articles .col-12 {        /* Distance between article items */
+  .articles .col-12 {
+    /* Distance between article items */
     margin-bottom: 3.5rem
   }
 
   .articles .col-12:last-of-type {
-    display: none;      /* Hide last item so that items-with-text number is even */
+    display: none;
+    /* Hide last item so that items-with-text number is even */
   }
 
   .articles a h3 {
@@ -1454,7 +1521,8 @@ article .card:last-of-type {
 
   /* Short articles */
 
-  .sh-articles .card {      /* Distance between short article items */
+  .sh-articles .card {
+    /* Distance between short article items */
     margin-bottom: 4.7rem
   }
 
@@ -1462,7 +1530,8 @@ article .card:last-of-type {
     margin-top: 2.6rem
   }
 
-  .sh-articles img {        /* Distance between images and text */
+  .sh-articles img {
+    /* Distance between images and text */
     margin-bottom: 0;
     margin-right: 1rem;
     max-width: 250px
@@ -1486,7 +1555,8 @@ article .card:last-of-type {
 
   /* Footer */
 
-  footer .col-12:first-of-type p {   /* Limit distance between copyright column and bottom of page */
+  footer .col-12:first-of-type p {
+    /* Limit distance between copyright column and bottom of page */
     margin-bottom: 0
   }
 
@@ -1500,7 +1570,8 @@ article .card:last-of-type {
 
   /* ***** MAIN ***** */
 
-  article figure {      /* Main page image */
+  article figure {
+    /* Main page image */
     margin-bottom: 5.2rem
   }
 
@@ -1513,19 +1584,22 @@ article .card:last-of-type {
     margin-bottom: 5.1rem
   }
 
-  .hsh-articles .card,      /* Distance between short article items */
+  .hsh-articles .card,
+  /* Distance between short article items */
   .bsh-articles .card {
     margin-bottom: 4.7rem
   }
 
-  .hsh-articles img,      /* Distance between images and text */
+  .hsh-articles img,
+  /* Distance between images and text */
   .bsh-articles img {
     margin-bottom: 0;
     margin-right: 1rem;
     max-width: 250px
   }
 
-  .hsh-articles a h3, .bsh-articles a h3 {
+  .hsh-articles a h3,
+  .bsh-articles a h3 {
     margin-bottom: 1.2rem;
     margin-top: 0
   }
@@ -1535,11 +1609,13 @@ article .card:last-of-type {
   /* Articles */
 
   .barticles div,
-  .harticles div {      /* Distance between article items */
+  .harticles div {
+    /* Distance between article items */
     margin-bottom: 3.45rem
   }
 
-  .barticles a h3, .harticles a h3 {
+  .barticles a h3,
+  .harticles a h3 {
     margin-bottom: 1rem;
     margin-top: 1.5rem
   }
@@ -1551,7 +1627,8 @@ article .card:last-of-type {
   /* Last update */
 
   .updates {
-    margin-bottom: 2rem; /* Making up for the hidden a2a buttons and their top/bottom margin */
+    margin-bottom: 2rem;
+    /* Making up for the hidden a2a buttons and their top/bottom margin */
   }
 
 
@@ -1598,6 +1675,7 @@ article .card:last-of-type {
   .articlegroup {
     margin-top: 5.95rem
   }
+
   .articleitem {
     margin-top: 4.1rem
   }
@@ -1606,26 +1684,28 @@ article .card:last-of-type {
 
   /* INFORMATION BUTTONS */
 
-  .articlegroup > .info {
+  .articlegroup>.info {
     margin-top: 4.3rem
   }
-  .articleitem > .info {
+
+  .articleitem>.info {
     margin-bottom: 4.4rem;
     margin-top: 1.45rem
   }
-  .articlegroup > .info,
-  .articleitem:last-of-type > .info {
+
+  .articlegroup>.info,
+  .articleitem:last-of-type>.info {
     margin-bottom: 6.2rem
   }
 
 
   /* Second link to eidh-karkinou on karkinos */
 
-  .contents ~ .contents {
+  .contents~.contents {
     margin-top: 5rem
   }
 
-  .contents ~ .contents .icon-up {
+  .contents~.contents .icon-up {
     font-size: 1.1rem
   }
 
@@ -1680,21 +1760,18 @@ article .card:last-of-type {
 
   .articles .img-container,
   .related .img-container {
-   padding-bottom: 64.48%
+    padding-bottom: 64.48%
   }
 
   .lg-article .img-container {
-   padding-bottom: 77.42%
+    padding-bottom: 77.42%
   }
 
-  .sh-articles .img-container {
-   padding-bottom: 64.53%
-  }
 
 
   /* *********************** INDEX *********************** */
 
-  .navbar .d-lg-none + .nav-link,
+  .navbar .d-lg-none+.nav-link,
   .navbar .nav-link:last-of-type {
     margin-top: 0
   }
@@ -1722,7 +1799,8 @@ article .card:last-of-type {
 
   .articles .col-12:nth-of-type(odd):not(:first-of-type):not(:nth-of-type(7)):before,
   .related .col-12:nth-of-type(odd):not(:first-of-type):before {
-    background-color: rgba(0, 0, 0, .125);   /* #e5e5e5 */
+    background-color: rgba(0, 0, 0, .125);
+    /* #e5e5e5 */
     bottom: 5%;
     content: '';
     display: block;
@@ -1749,6 +1827,7 @@ article .card:last-of-type {
     font-size: 2.1rem;
     margin-bottom: 2.3rem
   }
+
   @-moz-document url-prefix() {
     .cover .tip h2 {
       margin-bottom: 2.05rem
@@ -1768,7 +1847,8 @@ article .card:last-of-type {
     margin-top: 1.5rem
   }
 
-  .articles .col-12:last-of-type {   /* Show the previously hidden item */
+  .articles .col-12:last-of-type {
+    /* Show the previously hidden item */
     display: block
   }
 
@@ -1792,6 +1872,10 @@ article .card:last-of-type {
 
   .sh-articles img {
     max-width: 344px
+  }
+
+  .sh-articles .img-container {
+    padding-bottom: 64.48%
   }
 
 
@@ -1836,6 +1920,7 @@ article .card:last-of-type {
   #healthmenu a:hover {
     color: #008000
   }
+
   #beautymenu a:active,
   #beautymenu a:focus,
   #beautymenu a:hover {
@@ -1874,16 +1959,16 @@ article .card:last-of-type {
 
   /* INFORMATION BUTTONS */
 
-  .articlegroup > .info {
+  .articlegroup>.info {
     margin-top: 4.95rem
   }
 
-  .articleitem > .info {
+  .articleitem>.info {
     margin-bottom: 5rem
   }
 
-  .articlegroup > .info,
-  .articleitem:last-of-type > .info {
+  .articlegroup>.info,
+  .articleitem:last-of-type>.info {
     margin-bottom: 6.8rem
   }
 
@@ -1925,7 +2010,7 @@ article .card:last-of-type {
   /* Intrinsic ratio technique -- prevent content jumping when lazy loading images */
 
   .cover .col-xl-6 .img-container {
-     padding-bottom: 64.44%
+    padding-bottom: 64.44%
   }
 
   .cover .col-xl-3 .img-container {
@@ -1934,26 +2019,21 @@ article .card:last-of-type {
 
   .articles .img-container,
   .related .img-container {
-   padding-bottom: 64.57%
+    padding-bottom: 64.57%
   }
 
   .lg-article .img-container {
-   padding-bottom: 70.27%
+    padding-bottom: 70.27%
   }
 
   .sh-articles .img-container {
-   padding-bottom: 64.59%
+    padding-bottom: 64.59%
   }
 
-  .hsh-articles .img-container,
-  .bsh-articles .img-container {
-    padding-bottom: 64.53%
-  }
-
-  .harticles .img-container.
+  .harticles .img-container,
   .barticles .img-container,
   figure .img-container {
-   padding-bottom: 64.48%
+    padding-bottom: 64.48%
   }
 
 
@@ -1969,7 +2049,8 @@ article .card:last-of-type {
   }
 
   .cover div:first-of-type:before {
-    background-color: rgba(0, 0, 0, .125);   /* #e5e5e5 */
+    background-color: rgba(0, 0, 0, .125);
+    /* #e5e5e5 */
     bottom: 5%;
     content: '';
     display: block;
@@ -1991,11 +2072,12 @@ article .card:last-of-type {
     font-size: 2.8rem
   }
 
-  .cover div:nth-of-type(2) p:first-of-type + a {
+  .cover div:nth-of-type(2) p:first-of-type+a {
     margin-top: 1.75rem;
   }
+
   @-moz-document url-prefix() {
-    .cover div:nth-of-type(2) p:first-of-type + a {
+    .cover div:nth-of-type(2) p:first-of-type+a {
       margin-top: 1.85rem;
     }
   }
