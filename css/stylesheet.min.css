@@ -33,11 +33,16 @@ a:visited {
 a:focus,
 a:hover,
 a:active,
-a.active {
+a.active,
+button:focus,
+button:hover,
+button:active {
   color: #393939;
   outline: none;
   text-decoration: none
 }
+
+
 
 
 
@@ -87,16 +92,11 @@ a.active {
 
 .navbar-light .navbar-toggler {
   /* Button */
-  border-color: rgba(0, 0, 0, .125);
+  border: 0;
+  /* border-color: rgba(0, 0, 0, .125); */
   color: #696969;
-  font-size: 1rem;
-  padding: 0.7rem
-}
-
-.navbar-light .navbar-toggler:focus,
-.navbar-light .navbar-toggler:hover,
-.navbar-light .navbar-toggler:active {
-  color: #393939
+  font-size: 1.5rem;
+  padding: .5rem .7rem
 }
 
 .navbar .ml-auto {
@@ -737,7 +737,7 @@ article>.a2a_kit a:nth-of-type(2) {
 
 
 
-/* Offset for ToC links */
+/* Offset for ToC links - named anchors */
 
 .articlegroup h2:before {
   content: "";
