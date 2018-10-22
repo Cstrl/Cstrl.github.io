@@ -1082,6 +1082,29 @@ article .card:last-of-type {
 /* ============================== MEDIA QUERIES ================================ */
 
 
+@media (min-width: 375px) {
+
+  .lg-article .img-container {
+    padding-bottom: 100%
+  }
+
+}
+
+
+
+
+
+@media (min-width: 480px) {
+
+  .lg-article .img-container {
+    padding-bottom: 91.74%
+  }
+
+}
+
+
+
+
 
 @media (min-width: 576px) {
 
