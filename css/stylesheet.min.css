@@ -2180,10 +2180,6 @@ article .card:last-of-type {
 
   /* Carousel */
 
-  /* .carousel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  } */
-
   .owl-carousel {
     margin-left: auto;
     margin-right: auto;
