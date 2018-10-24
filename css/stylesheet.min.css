@@ -728,7 +728,6 @@ article>.a2a_kit a:nth-of-type(2) {
 }
 
 .contents~.contents .icon-up {
-  display: inline-block;
   float: right;
   font-size: 1.2rem;
   margin-top: -.8rem;
