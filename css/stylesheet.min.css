@@ -1847,12 +1847,12 @@ article .card:last-of-type {
 
   .cover .tip h2 {
     font-size: 2.1rem;
-    margin-bottom: 2.3rem
+    margin-bottom: 1.4rem
   }
 
   @-moz-document url-prefix() {
     .cover .tip h2 {
-      margin-bottom: 2.05rem
+      margin-bottom: 1.2rem
     }
   }
 
@@ -2091,11 +2091,12 @@ article .card:last-of-type {
   }
 
   .cover a h1 {
-    font-size: 2.8rem
+    font-size: 2.8rem;
+    margin-bottom: 1.3rem
   }
 
   .cover div:nth-of-type(2) p:first-of-type+a {
-    margin-top: 1.75rem;
+    margin-top: 1.85rem
   }
 
   @-moz-document url-prefix() {
@@ -2105,9 +2106,15 @@ article .card:last-of-type {
   }
 
   .cover .tip h2 {
-    font-size: 2rem;
-    margin-bottom: 1.3rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
     margin-top: -.2rem
+  }
+
+  @-moz-document url-prefix() {
+    .cover .tip h2 {
+      margin-bottom: 1.2rem
+    }
   }
 
 
