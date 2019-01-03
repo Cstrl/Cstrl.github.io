@@ -388,7 +388,7 @@ footer .col-12:nth-of-type(2) p {
 #top span {
  background-color: #fff;
  border: 1px solid rgba(0, 0, 0, 0.125);
- border-radius: 0.25rem;
+ border-radius: 5px;
  color: #696969;
  font-size: 1.2rem;
  padding: 0.7rem;
@@ -630,7 +630,7 @@ article > .a2a_kit a:nth-of-type(2) {
 }
 
 .a2a_default_style .a2a_svg {
- border-radius: 0 !important;
+ border-radius: 50% !important;
 }
 
 .col-md-2 .a2a_kit {
@@ -791,7 +791,7 @@ article p a[href^="/omorfia"]:active {
 }
 
 .info > a {
- border-radius: 0.25rem;
+ border-radius: 5px;
  color: #fff;
  display: block;
  padding: 0.7rem 1rem;
@@ -951,6 +951,7 @@ article .card:last-of-type {
 
 #ab {
  background-color: #008000;
+ border-radius: 5px;
  /* #228B22 -- not enough contrast */
  margin-top: 5rem;
  padding-top: 1rem;
@@ -1640,13 +1641,10 @@ article .card:last-of-type {
   margin-top: 0;
  }
 
-
  .navbar-brand img {
-    margin-top: -0.95rem;
-    width: 3rem;
-  }
-
-
+  margin-top: -0.95rem;
+  width: 3rem;
+ }
 
  /* ***** MAIN ***** */
 
