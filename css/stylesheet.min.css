@@ -813,20 +813,28 @@ article p a[href^="/omorfia"]:active {
  margin-bottom: 0.8rem;
 }
 
-.hinfo > a:link {
+.hinfo > a:link,    /* More info buttons on articles */
+.hinfo > button:link { /* Load more button on health page */
  background-color: #008000;
  /* #228B22 -- not enough contrast */
  border: 1px solid #008000;
  /* #228B22 -- not enough contrast */
+ color: #fff
 }
 
+.hinfo > a:visited,       /* More info buttons on articles */
 .hinfo > a:focus,
 .hinfo > a:hover,
-.hinfo > a:active {
+.hinfo > a:active,
+.hinfo > button:visited,  /* Load more button on health page */
+.hinfo > button:focus,
+.hinfo > button:hover,
+.hinfo > button:active {
  background-color: #006400;
  /* #228B22 -- not enough contrast */
  border: 1px solid #006400;
  /* #228B22 -- not enough contrast */
+ color: #fff
 }
 
 .hinfo > a + div {
@@ -1297,7 +1305,7 @@ article .card:last-of-type {
  .articles .col-12:nth-of-type(even):before,
  .barticles .col-12:nth-of-type(even):before,
  .cover div:last-of-type:before,
- .harticles .col-12:nth-of-type(even):before,
+ .harticles .col-12:not(.hinfo):not(.binfo):nth-of-type(even):before,
  .related .col-12:nth-of-type(even):before {
   background-color: rgba(0, 0, 0, 0.125);
   /* #e5e5e5 */
