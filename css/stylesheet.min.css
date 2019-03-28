@@ -284,19 +284,33 @@ button:active {
  /* #e5e5e5 */
  border-top: 1px solid rgba(0, 0, 0, 0.125);
  /* #e5e5e5 */
- margin-bottom: 6.6rem;
- margin-top: 2.9rem;
  padding-bottom: 3rem;
  padding-top: 3rem;
 }
 
 .lg-article .flex-column {
- background-color: #008000;
- /* #228B22 -- not enough contrast */
  color: #fff;
  font-size: 1.25rem;
  margin-bottom: 0;
  padding: 3.5rem 1rem;
+}
+
+/* Health large article */
+.cover + .lg-article {
+ margin-bottom: 6.7rem;
+ margin-top: 5.9rem;
+}
+.cover + .lg-article .flex-column {
+ background-color: #008000;
+}
+
+/* Beauty large article */
+.sh-articles + .lg-article {
+ margin-bottom: 6.7rem;
+ margin-top: 3rem;
+}
+.sh-articles + .lg-article .flex-column {
+ background-color: #eb8100;
 }
 
 .lg-article p {
@@ -349,8 +363,8 @@ button:active {
  /* #e5e5e5 */
  border-top: 1px solid rgba(0, 0, 0, 0.125);
  /* #e5e5e5 */
- margin-bottom: 6.6rem;
- margin-top: 2.8rem;
+ margin-bottom: 6.7rem;
+ margin-top: 3rem;
  padding-bottom: 1.7rem;
  padding-top: 3rem;
 }
@@ -814,12 +828,13 @@ article p a[href^="/omorfia"]:active {
 }
 
 .hinfo > a:link,    /* More info buttons on articles */
-.hinfo > button:link { /* Load more button on health page */
+.hinfo > button:link {
+ /* Load more button on health page */
  background-color: #008000;
  /* #228B22 -- not enough contrast */
  border: 1px solid #008000;
  /* #228B22 -- not enough contrast */
- color: #fff
+ color: #fff;
 }
 
 .hinfo > a:visited,       /* More info buttons on articles */
@@ -834,7 +849,7 @@ article p a[href^="/omorfia"]:active {
  /* #228B22 -- not enough contrast */
  border: 1px solid #006400;
  /* #228B22 -- not enough contrast */
- color: #fff
+ color: #fff;
 }
 
 .hinfo > a + div {
@@ -1107,7 +1122,7 @@ article .card:last-of-type {
  /* Articles */
 
  .articles {
-  margin-top: 8rem;
+  margin-top: 4rem;
  }
 
  .articles .col-12 {
@@ -1123,11 +1138,6 @@ article .card:last-of-type {
 
  /* Large article */
 
- .lg-article {
-  margin-bottom: 9.2rem;
-  margin-top: 4.4rem;
- }
-
  .lg-article .flex-column {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1141,7 +1151,7 @@ article .card:last-of-type {
 
  .sh-articles .card {
   /* Distance between short article items */
-  margin-bottom: 3.9rem;
+  margin-bottom: 3rem;
  }
 
  .sh-articles a h3 {
@@ -1153,8 +1163,8 @@ article .card:last-of-type {
  /* Carousel */
 
  .carousel-container {
-  margin-bottom: 9.2rem;
-  margin-top: 4.25rem;
+  margin-bottom: 6.6rem;
+  margin-top: 2rem;
  }
 
  /* Footer */
@@ -1410,9 +1420,16 @@ article .card:last-of-type {
 
  /* Large article */
 
- .lg-article {
-  margin-bottom: 9.7rem;
-  margin-top: 5.4rem;
+ /* Health large article */
+ .cover + .lg-article {
+  margin-bottom: 7.8rem;
+  margin-top: 5rem;
+ }
+
+ /* Beauty large article */
+ .sh-articles + .lg-article {
+  margin-bottom: 7.8rem;
+  margin-top: 2.4rem;
  }
 
  .lg-article .flex-column {
@@ -1448,8 +1465,8 @@ article .card:last-of-type {
  /* Carousel */
 
  .carousel-container {
-  margin-bottom: 9.8rem;
-  margin-top: 5.4rem;
+  margin-bottom: 7.9rem;
+  margin-top: 3.6rem;
  }
 
  /* Footer */
@@ -1721,13 +1738,18 @@ article .card:last-of-type {
 
  /* Large article */
 
- .lg-article {
-  margin-bottom: 10.5rem;
-  margin-top: 6rem;
- }
-
  .lg-article .flex-column {
   padding: 1rem;
+ }
+
+ /* Health large article */
+ .cover + .lg-article {
+  margin-bottom: 8rem;
+ }
+
+ /* Beauty large article */
+ .sh-articles + .lg-article {
+  margin-top: 3.4rem;
  }
 
  /* Short articles */
@@ -1743,8 +1765,8 @@ article .card:last-of-type {
  /* Carousel */
 
  .carousel-container {
-  margin-bottom: 10.5rem;
-  margin-top: 6rem;
+  margin-bottom: 8rem;
+  margin-top: 4rem;
  }
 
  /* Footer */
@@ -1934,10 +1956,29 @@ article .card:last-of-type {
   padding: 2.5rem;
  }
 
+ /* Health large article */
+ .cover + .lg-article {
+  margin-bottom: 8.5rem;
+  margin-top: 6.3rem;
+ }
+
+ /* Beauty large article */
+ .sh-articles + .lg-article {
+  margin-bottom: 8.5rem;
+  margin-top: 4rem;
+ }
+
  /* Short articles */
 
  .sh-articles img {
   max-width: 449px;
+ }
+
+ /* Carousel */
+
+ .carousel-container {
+  margin-bottom: 8.5rem;
+  margin-top: 4.2rem;
  }
 
  /* Footer */
