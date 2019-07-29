@@ -1725,7 +1725,8 @@ article .card:last-of-type {
   .cover h3:nth-of-type(5):after {
   display: block;
  }
- .cover h3:not(*:root):after {
+ .selector:not(*:root),
+ .cover h3:after {
   display: block !important;
  }
 
@@ -1769,18 +1770,22 @@ article .card:last-of-type {
   font-size: 1.5rem;
  }
 
- .cover h3:not(*:root) {
+ .selector:not(*:root), 
+ .cover h3 {
   line-height: 1.43rem;
  }
 
  /* Show extra h3 on Chrome/Chromium */
- .show-item:not(*:root) {
+ .selector:not(*:root),
+ .show-item {
   display: block !important;
  }
- .show-item:not(*:root):after {
+ .selector:not(*:root),
+ .show-item:after {
   display: none !important;
  }
- .show-dec:not(*:root):after {
+ .selector:not(*:root),
+ .show-dec:after {
   display: block !important;
  }
 
@@ -1985,7 +1990,8 @@ article .card:last-of-type {
   bottom: -35px;
  }
 
- .cover h3:nth-of-type(5):not(*:root):after {
+ .selector:not(*:root),
+ .cover h3:nth-of-type(5):after {
   display: none !important;
  }
 
@@ -2008,7 +2014,8 @@ article .card:last-of-type {
   margin-top: 5.2rem;
  }
  /* Chrome only */
- .cover .order-xl-first a:nth-of-type(3):not(*:root) {
+ .selector:not(*:root),
+ .cover .order-xl-first a:nth-of-type(3) {
   margin-top: 4.9rem;
  }
 
