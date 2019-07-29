@@ -150,6 +150,8 @@ button:active {
 .barticles p,
 .bsh-articles .card,
 .cover p,
+.cover a h2,
+.cover h3,
 .harticles p,
 .hsh-articles .card,
 .related p,
@@ -162,8 +164,10 @@ button:active {
 .barticles .col-lg-4:first-of-type p:before,
 .barticles div:not(:last-of-type) p:last-of-type:after,
 .bsh-articles .card:not(:last-of-type):after,
-.cover div:not(:last-of-type) p:last-of-type:after,
-.cover div:nth-of-type(2) p:first-of-type:after,
+.cover .col-xl-6 p:last-of-type:after,
+.cover a:nth-of-type(2) h2:after,
+.cover a:nth-of-type(4) h2:after,
+.cover h3:not(:last-of-type):after,
 .harticles .col-lg-4:first-of-type p:before,
 .harticles .col-md-6.dec-line p:last-of-type:after,
 /* .dec-line is added by Load More script */
@@ -172,14 +176,38 @@ button:active {
 .sh-articles .card:not(:last-of-type):after {
  background-color: rgba(0, 0, 0, 0.125);
  /* #e5e5e5 */
- bottom: -26px;
- /*-22px*/
+ bottom: -27px;
  content: "";
  display: block;
  height: 1px;
  left: 0;
  position: absolute;
  right: 0;
+}
+
+.cover .col-xl-6 p:last-of-type:after {
+ bottom: -46px;
+}
+
+.cover .order-xl-first a:nth-of-type(2) h2:after {
+ bottom: -27px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 25%;
+}
+.cover .order-xl-first a:nth-of-type(4) h2:after {
+ bottom: -48px;
+}
+
+.cover h3:after {
+  bottom: -25px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 25%;
+}
+
+.cover h3:nth-of-type(5):after {
+ display: none;
 }
 
 .sh-articles .card:not(:last-of-type):after,
@@ -195,33 +223,47 @@ button:active {
 
 /* Cover */
 
-.cover div:nth-of-type(2) {
- margin-bottom: 2.6rem;
- margin-top: 2.9rem;
+.cover .order-xl-first {
+ margin-bottom: 5.2rem;
+ margin-top: 4.9rem;
 }
 
-.cover div:nth-of-type(2) p:first-of-type + a {
- margin-top: 2.9rem;
+.cover .order-xl-first a:nth-of-type(3) {
+ margin-top: 4rem;
 }
 
-.cover a h1 {
- color: #000;
+.cover h1,
+.cover h2,
+.cover h3 a {
+ color: #333;
+}
+
+.cover h1 {
  font-size: 2.2rem;
  margin-bottom: 1rem;
  margin-top: 1.5rem;
 }
 
-.cover a > h2 {
- color: #000;
- font-size: 1.5rem;
+.cover a h2 {
+ font-size: 1.3rem;
  margin-bottom: 0.7rem;
  margin-top: 1.3rem;
 }
 
-.cover .tip h2 {
- font-size: 2rem;
- margin-bottom: 1.25rem;
+.cover h3 {
+ font-size: 1.1rem;
+ line-height: 1.53rem;
  margin-top: 0;
+}
+.cover h3:not(:last-of-type) {
+ margin-bottom: 3.2rem;
+}
+
+.cover .links-only h2 {
+ font-size: 1.6rem;
+ margin-bottom: 2rem;
+ text-align: center;
+ text-transform: uppercase;
 }
 
 .cover a[href^="/ygeia/"]:focus h1,
@@ -229,7 +271,10 @@ button:active {
 .cover a[href^="/ygeia/"]:active h1,
 .cover a[href^="/ygeia/"]:focus h2,
 .cover a[href^="/ygeia/"]:hover h2,
-.cover a[href^="/ygeia/"]:active h2 {
+.cover a[href^="/ygeia/"]:active h2,
+.cover h3 a[href^="/ygeia/"]:focus,
+.cover h3 a[href^="/ygeia/"]:hover,
+.cover h3 a[href^="/ygeia/"]:active {
  color: #008000;
 }
 
@@ -238,7 +283,10 @@ button:active {
 .cover a[href^="/omorfia/"]:active h1,
 .cover a[href^="/omorfia/"]:focus h2,
 .cover a[href^="/omorfia/"]:hover h2,
-.cover a[href^="/omorfia/"]:active h2 {
+.cover a[href^="/omorfia/"]:active h2,
+.cover h3 a[href^="/omorfia/"]:focus,
+.cover h3 a[href^="/omorfia/"]:hover,
+.cover h3 a[href^="/omorfia/"]:active {
  color: #eb8100;
 }
 
@@ -259,7 +307,7 @@ button:active {
 
 .articles a h3 {
  /* Same font-size/margin-top/margin-bottom as categories>articles and article>related */
- color: #000;
+ color: #333;
  font-size: 1.6rem;
  margin-bottom: 1rem;
  margin-top: 1.5rem;
@@ -338,7 +386,7 @@ button:active {
 
 .sh-articles a h3 {
  /* Same font-size/margin-top/margin-bottom as categories>sh-articles */
- color: #000;
+ color: #333;
  font-size: 1.6rem;
  margin-bottom: 1.2rem;
  margin-top: 0.7rem;
@@ -469,7 +517,7 @@ figure figcaption {
 .hsh-articles a h3,
 /* Distance between images and text */
 .bsh-articles a h3 {
- color: #000;
+ color: #333;
  font-size: 1.6rem;
  margin-bottom: 1.2rem;
  margin-top: 0.7rem;
@@ -522,7 +570,7 @@ figure figcaption {
 
 .barticles a h3,
 .harticles a h3 {
- color: #000;
+ color: #333;
  font-size: 1.6rem;
  margin-bottom: 1rem;
  margin-top: 1.5rem;
@@ -950,7 +998,7 @@ article .card:last-of-type {
 }
 
 .related a h3 {
- color: #000;
+ color: #333;
  font-size: 1.6rem;
  margin-bottom: 1rem;
  margin-top: 1.5rem;
@@ -1070,21 +1118,23 @@ article .card:last-of-type {
 
  /* Decorative lines */
 
+ .cover h3::after {
+  bottom: -29px;
+ }
+
  .articles div:not(:last-of-type) p:last-of-type:after,
- .articles div:nth-of-type(2) p:before,
+ .articles .order-xl-first p:before,
  .barticles div:not(:last-of-type) p:last-of-type:after,
- .barticles div:nth-of-type(2) p:before,
+ .barticles .order-xl-first p:before,
  .bsh-articles .card:not(:last-of-type):after,
- .cover div:not(:last-of-type) p:last-of-type:after,
- .cover div:nth-of-type(2) p:first-of-type:after,
  .harticles .col-md-6:not(:last-of-type) p:last-of-type:after,
- .harticles div:nth-of-type(2) p:before,
+ .harticles .order-xl-first p:before,
  .hsh-articles .card:not(:last-of-type):after,
  .sh-articles .card:not(:last-of-type):after {
   bottom: -35px;
  }
 
- .articles div:nth-of-type(2) p:before {
+ .articles .order-xl-first p:before {
   top: -289px;
  }
 
@@ -1100,12 +1150,7 @@ article .card:last-of-type {
 
  /* Cover */
 
- .cover div:nth-of-type(2) {
-  margin-bottom: 3.3rem;
-  margin-top: 3.9rem;
- }
-
- .cover div:nth-of-type(2) p:first-of-type + a {
+ .cover .order-xl-first a:nth-of-type(3) {
   margin-top: 3.9rem;
  }
 
@@ -1115,8 +1160,12 @@ article .card:last-of-type {
   margin-top: 1.7rem;
  }
 
- .cover a > h2 {
-  font-size: 1.7rem;
+ .cover a h2 {
+  font-size: 1.5rem;
+ }
+
+ .cover h3:not(:last-of-type) {
+  margin-bottom: 4rem;
  }
 
  /* Articles */
@@ -1293,9 +1342,8 @@ article .card:last-of-type {
 
  /* Decorative lines */
 
- .cover div:first-of-type p:last-of-type:after,
- .cover div:nth-of-type(2) p:first-of-type:after {
-  bottom: -36px;
+ .cover div:first-of-type p:last-of-type:after {
+  bottom: -39px;
  }
 
  .bsh-articles .card:not(:last-of-type):after,
@@ -1344,32 +1392,33 @@ article .card:last-of-type {
  }
 
  .articles div:not(:last-of-type) p:last-of-type:after,
- .articles div:nth-of-type(2) p:before,
+ .articles .order-xl-first p:before,
  .barticles .col-12:first-of-type:after,
  .barticles div:not(:last-of-type) p:last-of-type:after,
- .barticles div:nth-of-type(2) p:before,
- .cover div:nth-of-type(2) p:first-of-type::after,
+ .barticles .order-xl-first p:before,
+ .cover .order-xl-first a:nth-of-type(4) h2::after,
  .cover div:nth-of-type(n + 2) p:last-of-type:after,
+ .cover h3:nth-of-type(4):after,
  .harticles .col-12:first-of-type:after,
  .harticles .col-md-6:not(:last-of-type) p:last-of-type:after,
- .harticles div:nth-of-type(2) p:before,
+ .harticles .order-xl-first p:before,
  .related div:not(:last-of-type) p:last-of-type:after {
   display: none;
  }
 
  /* Cover */
 
- .cover div:nth-of-type(2) {
+ .cover .order-xl-first {
   margin-bottom: 2.1rem;
-  margin-top: 4.4rem;
+  margin-top: 4rem;
  }
 
- .cover div:nth-of-type(2) p:first-of-type + a {
-  margin-top: 2.5rem;
+ .cover .order-xl-first a:nth-of-type(3) {
+  margin-top: 4rem;
  }
 
  .cover div:last-of-type {
-  margin-top: 4.2rem;
+  margin-top: 4rem;
  }
 
  .cover a h1 {
@@ -1378,19 +1427,12 @@ article .card:last-of-type {
   margin-top: 1.9rem;
  }
 
- .cover a > h2 {
-  font-size: 1.6rem;
+ .cover a h2 {
+  font-size: 1.4rem;
  }
 
- .cover .tip h2 {
-  font-size: 2.1rem;
-  margin-bottom: 1.6rem;
- }
-
- @-moz-document url-prefix() {
-  .cover .tip h2 {
-   margin-bottom: 1.45rem;
-  }
+ .cover .links-only h2 {
+  margin-bottom: 2.25rem;
  }
 
  /* Articles */
@@ -1559,7 +1601,7 @@ article .card:last-of-type {
   /* border-radius: 100% !important; */
   height: 37px;
   width: 37px;
-  /* background-color: #000 !important */
+  /* background-color: #333 !important */
  }
 
  .a2a_default_style .a2a_svg svg {
@@ -1675,9 +1717,16 @@ article .card:last-of-type {
 
  /* Decorative lines */
 
- .cover div:first-of-type p:last-of-type::after,
- .cover div:nth-of-type(2) p:first-of-type::after {
+ .cover div:first-of-type p:last-of-type::after {
   bottom: -44px;
+ }
+
+  .cover h3:nth-of-type(4):after,
+  .cover h3:nth-of-type(5):after {
+  display: block;
+ }
+ .cover h3:not(*:root):after {
+  display: block !important;
  }
 
  .articles .col-12:nth-of-type(4):before,
@@ -1699,26 +1748,40 @@ article .card:last-of-type {
   width: 1px;
  }
 
+
+
  /* Cover */
 
- .cover div:nth-of-type(2) {
+ .cover .order-xl-first {
   margin-bottom: 2.1rem;
-  margin-top: 5.4rem;
+  margin-top: 5rem;
  }
 
  .cover div:last-of-type {
-  margin-top: 5.2rem;
+  margin-top: 4.8rem;
  }
 
- .cover .tip h2 {
-  font-size: 2.1rem;
-  margin-bottom: 1.4rem;
+ .cover .order-xl-first a:nth-of-type(3) {
+  margin-top: 4rem;
  }
 
- @-moz-document url-prefix() {
-  .cover .tip h2 {
-   margin-bottom: 1.2rem;
-  }
+ .cover a h2 {
+  font-size: 1.5rem;
+ }
+
+ .cover h3:not(*:root) {
+  line-height: 1.43rem;
+ }
+
+ /* Show extra h3 on Chrome/Chromium */
+ .show-item:not(*:root) {
+  display: block !important;
+ }
+ .show-item:not(*:root):after {
+  display: none !important;
+ }
+ .show-dec:not(*:root):after {
+  display: block !important;
  }
 
  /* Articles */
@@ -1901,7 +1964,8 @@ article .card:last-of-type {
 
  /* Decorative lines */
 
- .cover div:first-of-type p:last-of-type:after {
+ .cover div:first-of-type p:last-of-type:after,
+ .cover h3:nth-of-type(4)::after {
   display: none;
  }
 
@@ -1917,6 +1981,14 @@ article .card:last-of-type {
   width: 1px;
  }
 
+  .cover .order-xl-first a:nth-of-type(2) h2::after {
+  bottom: -35px;
+ }
+
+ .cover h3:nth-of-type(5):not(*:root):after {
+  display: none !important;
+ }
+
  /* Cover */
 
  .cover div:nth-of-type(n + 2) {
@@ -1928,26 +2000,22 @@ article .card:last-of-type {
   margin-bottom: 1.3rem;
  }
 
- .cover div:nth-of-type(2) p:first-of-type + a {
-  margin-top: 1.85rem;
+ .cover a h2 {
+  font-size: 1.35rem;
  }
 
- @-moz-document url-prefix() {
-  .cover div:nth-of-type(2) p:first-of-type + a {
-   margin-top: 1.85rem;
-  }
+ .cover .order-xl-first a:nth-of-type(3) {
+  margin-top: 5.2rem;
+ }
+ /* Chrome only */
+ .cover .order-xl-first a:nth-of-type(3):not(*:root) {
+  margin-top: 4.9rem;
  }
 
- .cover .tip h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.8rem;
-  margin-top: -0.2rem;
- }
 
- @-moz-document url-prefix() {
-  .cover .tip h2 {
-   margin-bottom: 1.2rem;
-  }
+
+ .cover h3:not(:last-of-type) {
+  margin-bottom: 3.2rem;
  }
 
  /* Large article */
