@@ -1,0 +1,119 @@
+.navbar {
+ border-bottom: 1px solid $gray-darker;
+ margin-bottom: 3.05rem;
+ @include media-breakpoint-up(576) {
+  margin-bottom: 3.35rem;
+ }
+ @include media-breakpoint-up(768) {
+  margin-bottom: 3.65rem;
+ }
+
+ .navbar-brand {
+  font: 1.8rem Poppins, sans-serif;
+  @include media-breakpoint-up(576) {
+   font-size: 2rem;
+  }
+  @include media-breakpoint-up(768) {
+   font-size: 2.2rem;
+  }
+
+  img {
+   display: inline-block;
+   margin-top: -0.7rem;
+   width: 2.4rem;
+   @include media-breakpoint-up(576) {
+    margin-top: -0.85rem;
+    width: 2.8rem;
+   }
+   @include media-breakpoint-up(768) {
+    margin-top: -0.9rem;
+    width: 2.95rem;
+   }
+   @include media-breakpoint-up(992) {
+    margin-top: -0.95rem;
+    width: 3rem;
+   }
+  }
+ }
+
+ span {
+  display: inline-block;
+  margin-left: -0.2rem;
+  @include media-breakpoint-up(576) {
+   margin-left: -0.1rem;
+  }
+ }
+
+ .d-lg-none {
+  /* Submenus with article links */
+  margin-left: 0.6rem;
+  margin-top: 0;
+
+  a:not(:last-of-type) {
+   /* Submenu items */
+   margin-bottom: 0.25rem;
+   margin-top: 0.25rem;
+  }
+ }
+
+ .nav-link {
+  /* Menu items */
+  color: $gray-medium;
+  font-size: 1.2rem;
+
+  &:last-of-type {
+   margin-top: 0.5rem;
+   padding-right: 0;
+   @include media-breakpoint-up(992) {
+    margin-top: 0;
+   }
+
+   & + .d-lg-none {
+    margin-bottom: 0.6rem;
+   }
+  }
+ }
+
+ .navbar-toggler {
+  border: 0;
+  color: $gray-medium;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.7rem;
+ }
+
+ .ml-auto {
+  /* Collapsed content */
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  @include media-breakpoint-up(992) {
+   margin-bottom: 0;
+   margin-top: 0;
+  }
+ }
+
+ .d-lg-none + .nav-link {
+  /* Health sidemenu: distance from beauty item */
+  margin-top: 1.2rem;
+  @include media-breakpoint-up(992) {
+   margin-top: 0;
+  }
+ }
+}
+
+.navbar-light {
+ .navbar-nav a[href^="/ygeia/"]:focus,
+ .navbar-nav a[href^="/ygeia/"]:hover,
+ .navbar-nav a[href^="/ygeia/"]:active,
+ .navbar-nav a[href^="/ygeia/"].active,
+ #healthmenu .active {
+  color: $green;
+ }
+
+ .navbar-nav a[href^="/omorfia/"]:focus,
+ .navbar-nav a[href^="/omorfia/"]:hover,
+ .navbar-nav a[href^="/omorfia/"]:active,
+ .navbar-nav a[href^="/omorfia/"].active,
+ #beautymenu .active {
+  color: $orange;
+ }
+}

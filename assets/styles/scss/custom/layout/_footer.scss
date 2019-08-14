@@ -1,0 +1,54 @@
+footer {
+ border-top: 1px solid rgba(0, 0, 0, 0.125);
+ margin-top: 5rem;
+ padding-bottom: 0.6rem;
+ padding-top: 1rem;
+
+ .col-12 {
+  &:first-of-type p {
+   @include media-breakpoint-up(768) {
+    /* Limit distance between copyright column and bottom of page */
+    margin-bottom: 0;
+   }
+  }
+
+  &:nth-of-type(2) p {
+   /* Distance between portfolio link and edge of page */
+   margin-bottom: 0;
+  }
+ }
+
+ #top {
+  /* Button */
+  bottom: 1.4rem;
+  display: none;
+  position: fixed;
+  right: 0.9rem;
+  z-index: 1;
+  @include media-breakpoint-up(576) {
+   right: 2rem;
+  }
+  @include media-breakpoint-up(768) {
+   right: 2.4rem;
+  }
+  @include media-breakpoint-up(992) {
+   right: 1.9rem;
+  }
+  @include media-breakpoint-up(1200) {
+   right: 3.7%;
+  }
+
+  span {
+   background-color: #fff;
+   border: 1px solid $gray-darker;
+   border-radius: 5px;
+   color: $gray-medium;
+   font-size: 1.2rem;
+   padding: 0.7rem;
+  }
+
+  &:hover span {
+   color: $gray-dark;
+  }
+ }
+}

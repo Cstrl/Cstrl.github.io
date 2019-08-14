@@ -1,0 +1,26 @@
+.breadcrumbs {
+ margin-bottom: 1.5rem;
+ margin-top: -0.2rem;
+
+ ol {
+  padding-left: 0;
+ }
+
+ li {
+  display: inline-block;
+ }
+
+ a[href^="/ygeia/"]:focus,
+ a[href^="/ygeia/"]:hover,
+ a[href^="/ygeia/"]:active,
+ a[href^="/ygeia/"].active {
+  color: $green;
+ }
+
+ a[href^="/omorfia/"]:focus,
+ a[href^="/omorfia/"]:hover,
+ a[href^="/omorfia/"]:active,
+ a[href^="/omorfia/"].active {
+  color: $orange;
+ }
+}

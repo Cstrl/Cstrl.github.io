@@ -1,0 +1,50 @@
+.sidemenu {
+ p {
+  font-size: 1.3rem;
+  font-weight: bold;
+ }
+
+ a {
+  @include media-breakpoint-up(992) {
+   display: block;
+   margin-bottom: 0.25rem;
+   margin-top: 0.25rem;
+  }
+
+  &:first-of-type {
+   @include media-breakpoint-up(992) {
+    margin-top: 0;
+   }
+  }
+ }
+}
+
+#healthmenu {
+ a:active,
+ a:focus,
+ a:hover {
+  @include media-breakpoint-up(992) {
+   color: $green;
+  }
+ }
+}
+
+#beautymenu {
+ a:active,
+ a:focus,
+ a:hover {
+  @include media-breakpoint-up(992) {
+   color: $orange;
+  }
+ }
+
+ p:last-of-type {
+  margin-top: 2.5rem;
+ }
+
+ .heading:last-of-type {
+  @include media-breakpoint-up(992) {
+   margin-top: 2.5rem;
+  }
+ }
+}

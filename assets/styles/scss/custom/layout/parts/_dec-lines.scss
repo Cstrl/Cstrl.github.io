@@ -1,0 +1,266 @@
+// Decorative lines
+
+.articles p,
+.barticles p,
+.bsh-articles .card,
+.cover p,
+.cover a h2,
+.cover h3,
+.harticles p,
+.hsh-articles .card,
+.related p,
+.related p,
+.sh-articles .card {
+ position: relative;
+}
+
+.articles div:not(:last-of-type) p:last-of-type:after,
+.barticles .col-lg-4:first-of-type p:before,
+.barticles div:not(:last-of-type) p:last-of-type:after,
+.bsh-articles .card:not(:last-of-type):after,
+.cover .col-xl-6 p:last-of-type:after,
+.cover a:nth-of-type(2) h2:after,
+.cover a:nth-of-type(4) h2:after,
+.cover h3:not(:last-of-type):after,
+.harticles .col-lg-4:first-of-type p:before,
+.harticles .col-md-6.dec-line p:last-of-type:after,
+/* .dec-line is added by Load More script */
+.hsh-articles .card:not(:last-of-type):after,
+.related div:not(:last-of-type) p:last-of-type:after,
+.sh-articles .card:not(:last-of-type):after {
+ background-color: $gray-darker;
+ bottom: -27px;
+ content: "";
+ display: block;
+ height: 1px;
+ left: 0;
+ position: absolute;
+ right: 0;
+}
+
+.articles .col-12:nth-of-type(even):before,
+.barticles .col-12:nth-of-type(even):before,
+.cover div:last-of-type:before,
+.harticles .col-12:not(.hinfo):not(.binfo):nth-of-type(even):before,
+.related .col-12:nth-of-type(even):before {
+ @include media-breakpoint-up(768) {
+  background-color: $gray-darker;
+  /* #e5e5e5 */
+  bottom: 3%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 1px;
+ }
+}
+
+.articles div:not(:last-of-type) p:last-of-type:after,
+.articles .order-xl-first p:before,
+.barticles .col-12:first-of-type:after,
+.barticles div:not(:last-of-type) p:last-of-type:after,
+.barticles .order-xl-first p:before,
+.cover .order-xl-first a:nth-of-type(4) h2::after,
+.cover div:nth-of-type(n + 2) p:last-of-type:after,
+.cover h3:nth-of-type(4):after,
+.harticles .col-12:first-of-type:after,
+.harticles .col-md-6:not(:last-of-type) p:last-of-type:after,
+.harticles .order-xl-first p:before,
+.related div:not(:last-of-type) p:last-of-type:after {
+ @include media-breakpoint-up(768) {
+  display: none;
+ }
+}
+
+.articles
+ .col-12:nth-of-type(odd):not(:first-of-type):not(:nth-of-type(7)):before,
+.related .col-12:nth-of-type(odd):not(:first-of-type):before {
+ @include media-breakpoint-up(992) {
+  background-color: $gray-darker;
+  /* #e5e5e5 */
+  bottom: 5%;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1px;
+ }
+}
+
+// Cover
+
+.cover {
+ div:first-of-type:before {
+  @include media-breakpoint-up(1200) {
+   background-color: $gray-darker;
+   /* #e5e5e5 */
+   bottom: 5%;
+   content: "";
+   display: block;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 1px;
+  }
+ }
+ div:first-of-type p:last-of-type:after {
+  @include media-breakpoint-up(768) {
+   bottom: -39px;
+  }
+  @include media-breakpoint-up(992) {
+   bottom: -44px;
+  }
+  @include media-breakpoint-up(1200) {
+   display: none;
+  }
+ }
+
+ div:last-of-type:before {
+  @include media-breakpoint-up(768) {
+   bottom: 5%;
+   left: 0;
+   top: 4px;
+  }
+ }
+
+ .col-xl-6 p:last-of-type:after {
+  bottom: -46px;
+ }
+
+ .order-xl-first a:nth-of-type(2) h2:after {
+  bottom: -27px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  @include media-breakpoint-up(1200) {
+   bottom: -35px;
+  }
+ }
+ .order-xl-first a:nth-of-type(4) h2:after {
+  bottom: -48px;
+ }
+
+ h3:after {
+  bottom: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  @include media-breakpoint-up(576) {
+   bottom: -29px;
+  }
+ }
+
+ h3:nth-of-type(5):after {
+  display: none;
+  @include media-breakpoint-up(992) {
+   display: block;
+  }
+ }
+
+ h3:nth-of-type(4)::after {
+  @include media-breakpoint-up(992) {
+   display: block;
+  }
+  @include media-breakpoint-up(1200) {
+   display: none;
+  }
+ }
+}
+
+.sh-articles .card:not(:last-of-type):after,
+/* Lines between short article items */
+.bsh-articles .card:not(:last-of-type):after,
+.hsh-articles .card:not(:last-of-type):after {
+ bottom: -12px;
+}
+
+.related div:not(:last-of-type) p:last-of-type:after {
+ bottom: -18px;
+}
+
+.articles div:not(:last-of-type) p:last-of-type:after,
+.articles .order-xl-first p:before,
+.barticles div:not(:last-of-type) p:last-of-type:after,
+.barticles .order-xl-first p:before,
+.bsh-articles .card:not(:last-of-type):after,
+.harticles .col-md-6:not(:last-of-type) p:last-of-type:after,
+.harticles .order-xl-first p:before,
+.hsh-articles .card:not(:last-of-type):after,
+.sh-articles .card:not(:last-of-type):after {
+ @include media-breakpoint-up(576) {
+  bottom: -35px;
+ }
+}
+
+.articles .order-xl-first p:before {
+ @include media-breakpoint-up(576) {
+  top: -289px;
+ }
+}
+
+.bsh-articles .card:not(:last-of-type):after,
+.hsh-articles .card:not(:last-of-type):after,
+.sh-articles .card:not(:last-of-type):after {
+ @include media-breakpoint-up(576) {
+  bottom: -20px;
+ }
+}
+
+.related div:not(:last-of-type) p:last-of-type:after {
+ @include media-breakpoint-up(576) {
+  bottom: -22px;
+ }
+}
+
+.bsh-articles .card:not(:last-of-type):after,
+.hsh-articles .card:not(:last-of-type):after,
+.sh-articles .card:not(:last-of-type):after {
+ @include media-breakpoint-up(768) {
+  background-color: $gray-darker;
+  /* #e5e5e5 */
+  bottom: -36px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+ }
+}
+
+.articles .col-12:nth-of-type(even):before {
+ @include media-breakpoint-up(768) {
+  left: 0;
+ }
+}
+
+.barticles .col-12:nth-of-type(even):before,
+.harticles .col-12:nth-of-type(even):before,
+.related .col-12:nth-of-type(even):before {
+ @include media-breakpoint-up(768) {
+  left: 0;
+ }
+}
+
+.articles .col-12:nth-of-type(4):before,
+.related .col-lg-4:nth-of-type(4):before {
+ @include media-breakpoint-up(992) {
+  display: none;
+ }
+}
+
+// Chrome-only styles
+.chrome {
+ .cover h3:after {
+  @include media-breakpoint-up(992) {
+   display: block !important;
+  }
+ }
+
+ .cover h3:nth-of-type(5):after {
+  @include media-breakpoint-up(1200) {
+   display: none !important;
+  }
+ }
+}

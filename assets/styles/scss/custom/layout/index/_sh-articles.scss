@@ -1,0 +1,76 @@
+// Short articles
+.sh-articles {
+ .card {
+  border: 0;
+  margin-bottom: 2.9rem;
+  @include media-breakpoint-up(576) {
+   margin-bottom: 3rem; /* Distance between short article items */
+  }
+  @include media-breakpoint-up(768) {
+   margin-bottom: 4.7rem;
+  }
+
+  &:first-of-type {
+   margin-top: 2rem;
+   @include media-breakpoint-up(576) {
+    margin-top: 2.3rem;
+   }
+   @include media-breakpoint-up(768) {
+    margin-top: 2.6rem;
+   }
+  }
+ }
+
+ .img-container {
+  @include media-breakpoint-up(992) {
+   padding-bottom: 64.48%;
+  }
+ }
+
+ img {
+  /* Distance between images and text */
+  height: auto;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  @include media-breakpoint-up(768) {
+   margin-bottom: 0;
+   margin-right: 1rem;
+   max-width: 250px;
+  }
+  @include media-breakpoint-up(992) {
+   max-width: 344px;
+  }
+  @include media-breakpoint-up(1200) {
+   max-width: 449px;
+  }
+ }
+
+ a h3 {
+  /* Same font-size/margin-top/margin-bottom as categories>sh-articles */
+  color: $black-light;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  margin-top: 0.7rem;
+  @include media-breakpoint-up(576) {
+   font-size: 1.7rem;
+   margin-bottom: 1.4rem;
+   margin-top: 0.9rem;
+  }
+  @include media-breakpoint-up(768) {
+   margin-bottom: 1.2rem;
+   margin-top: 0;
+  }
+ }
+
+ a[href^="/ygeia/"]:focus h3,
+ a[href^="/ygeia/"]:hover h3,
+ a[href^="/ygeia/"]:active h3 {
+  color: $green;
+ }
+
+ a[href^="/omorfia/"]:focus h3,
+ a[href^="/omorfia/"]:hover h3,
+ a[href^="/omorfia/"]:active h3 {
+  color: $orange;
+ }
+}

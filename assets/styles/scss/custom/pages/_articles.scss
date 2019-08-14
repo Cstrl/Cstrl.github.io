@@ -1,0 +1,295 @@
+article {
+ h2 {
+  margin-bottom: 1.5rem;
+ }
+
+ h3 {
+  margin-bottom: 1rem;
+ }
+
+ figure /* Main page image */ {
+  @include media-breakpoint-up(768) {
+   margin-bottom: 5.2rem;
+  }
+ }
+
+ .lead {
+  margin-bottom: 1.5rem;
+ }
+
+ /* Last update */
+ .updates {
+  font-style: italic;
+ }
+
+ /* Links in article content */
+
+ p a[href^="/ygeia"]:focus,
+ p a[href^="/ygeia"]:hover,
+ p a[href^="/ygeia"]:active {
+  color: #008000;
+ }
+
+ p a[href^="/omorfia"]:focus,
+ p a[href^="/omorfia"]:hover,
+ p a[href^="/omorfia"]:active {
+  color: #eb8100;
+ }
+}
+
+/* Table of contents - TOC */
+
+.contents {
+ margin-bottom: 4rem;
+ margin-top: 4.1rem;
+ @include media-breakpoint-up(768) {
+  margin-top: 0;
+ }
+
+ .card-link + .card-link {
+  margin-left: 0;
+ }
+
+ h5 {
+  margin-bottom: 1rem;
+ }
+
+ a {
+  display: block;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+
+  &:last-of-type {
+   margin-bottom: 0;
+  }
+ }
+}
+
+.htoc a:active,
+.htoc a:focus,
+.htoc a:hover {
+ color: $green;
+}
+
+.btoc a:active,
+.btoc a:focus,
+.btoc a:hover {
+ color: $orange;
+}
+
+/* Second link to eidh-karkinou on karkinos */
+
+.contents ~ .contents {
+ margin-bottom: -0.8rem;
+ @include media-breakpoint-up(768) {
+  margin-top: 5rem;
+ }
+
+ .icon-up {
+  float: right;
+  font-size: 1.2rem;
+  margin-top: -0.8rem;
+  transform: rotate(90deg);
+  @include media-breakpoint-up(576) {
+   font-size: 1rem;
+   margin-top: 0;
+  }
+  @include media-breakpoint-up(768) {
+   font-size: 1.1rem;
+  }
+ }
+}
+
+/* Offset for ToC links - named anchors */
+
+.articlegroup h2:before {
+ content: "";
+ display: block;
+ height: 40px;
+ /* fixed header height */
+ margin: -40px 0 0;
+ /* negative fixed header height */
+}
+
+/* Introductory paragraphs */
+.intro {
+ margin-top: 5rem;
+ @include media-breakpoint-up(1200) {
+  margin-top: 5rem;
+ }
+}
+
+/* Blockquotes */
+
+.beautyblock,
+.healthblock {
+ font-style: italic;
+ font-size: 1.6rem;
+ /*padding: 1.5rem;*/
+ margin: 8rem auto;
+}
+
+/* Footnotes */
+
+.footnote {
+ font-style: italic;
+}
+
+/* ARTICLE PARTS */
+
+.articlegroup {
+ margin-top: 5.35rem;
+ @include media-breakpoint-up(768) {
+  margin-top: 5.95rem;
+ }
+ @include media-breakpoint-up(992) {
+  margin-top: 6.55rem;
+ }
+}
+
+.articleitem {
+ margin-top: 3.5rem;
+ @include media-breakpoint-up(768) {
+  margin-top: 4.1rem;
+ }
+ @include media-breakpoint-up(992) {
+  margin-top: 4.7rem;
+ }
+}
+
+/* LISTS */
+
+/* Lists for ingredients etc */
+
+p ~ ul.blist {
+ display: inline-block;
+ list-style-type: none;
+ padding-left: 0;
+}
+
+/* Lists with square dots */
+
+.ulsquare {
+ p,
+ span {
+  /* Paragraphs that look like list-items */
+  display: list-item;
+  list-style-type: square;
+  margin-left: 17px;
+ }
+
+ p:first-of-type:not(.noul),
+ span:first-of-type {
+  margin-top: 0.8rem;
+ }
+
+ & > p.noul {
+  /* Paragraphs that don't look like list-items */
+  display: block;
+  /* To add margins */
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+ }
+}
+
+/* Lists with greek letters */
+
+.ulgreek {
+ list-style-type: lower-greek;
+ padding-left: 20px;
+}
+
+/* Ingredients lists */
+
+p ~ ul.blist {
+ li:first-of-type {
+  float: left;
+ }
+
+ li:not(:first-child) {
+  margin-left: 3.8rem;
+ }
+}
+
+/* Το ξέρατε ότι... */
+
+article .card:last-of-type {
+ margin-top: 5.6rem;
+ @include media-breakpoint-up(768) {
+  margin-top: 6.2rem;
+ }
+ @include media-breakpoint-up(992) {
+  margin-top: 6.8rem;
+ }
+}
+
+/* ***** RELATED ARTICLES ***** */
+
+.related {
+ margin-top: 6.2rem;
+ @include media-breakpoint-up(576) {
+  margin-top: 6.85rem;
+ }
+ @include media-breakpoint-up(768) {
+  margin-top: 7.45rem;
+ }
+
+ div {
+  margin-bottom: 1.85rem;
+  @include media-breakpoint-up(576) {
+   margin-bottom: 2.15rem;
+  }
+  @include media-breakpoint-up(768) {
+   margin-bottom: 2.45rem;
+  }
+ }
+
+ div:first-of-type {
+  margin-top: 1.5rem;
+  @include media-breakpoint-up(576) {
+   margin-top: 1.65rem;
+  }
+ }
+
+ div:nth-of-type(-n + 2) {
+  @include media-breakpoint-up(768) {
+   margin-top: 1.8rem;
+  }
+ }
+
+ div:nth-of-type(3) {
+  @include media-breakpoint-up(992) {
+   margin-top: 1.8rem;
+  }
+ }
+
+ a h3 {
+  color: $black-light;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  @include media-breakpoint-up(576) {
+   font-size: 1.7rem;
+   margin-bottom: 1.2rem;
+   margin-top: 1.7rem;
+  }
+  @include media-breakpoint-up(768) {
+   margin-bottom: 1rem;
+   margin-top: 1.5rem;
+  }
+ }
+
+ a[href^="/ygeia/"]:focus h3,
+ a[href^="/ygeia/"]:hover h3,
+ a[href^="/ygeia/"]:active h3,
+ a[href^="/ygeia/"].active h3 {
+  color: $green;
+ }
+
+ a[href^="/omorfia/"]:focus h3,
+ a[href^="/omorfia/"]:hover h3,
+ a[href^="/omorfia/"]:active h3,
+ a[href^="/omorfia/"].active h3 {
+  color: $orange;
+ }
+}

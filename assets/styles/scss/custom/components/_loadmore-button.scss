@@ -1,0 +1,25 @@
+.harticles .col-md-6 {
+ display: none;
+ /* Letting the script show 10 links at a time */
+}
+
+.load-more {
+ background-color: $green;
+ /* #228B22 -- not enough contrast */
+ border: 1px solid $green;
+ /*#228B22 -- not enough contrast */
+ border-radius: 0.25rem;
+ color: #fff;
+ display: block;
+ margin: 1rem auto 10rem;
+ padding: 0.7rem 2rem;
+ text-align: center;
+
+ &:focus,
+ &:hover,
+ &:active {
+  background-color: $green-dark;
+  border: 1px solid $green-dark;
+  cursor: pointer;
+ }
+}

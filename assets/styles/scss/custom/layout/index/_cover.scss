@@ -1,0 +1,176 @@
+.cover {
+ div:last-of-type {
+  @include media-breakpoint-up(768) {
+   margin-top: 4rem;
+  }
+  @include media-breakpoint-up(992) {
+   margin-top: 4.8rem;
+  }
+  //   @include media-breakpoint-up(1200) {
+  //    //    margin-top: 0;
+  //   }
+ }
+
+ div:nth-of-type(n + 2) {
+  @include media-breakpoint-up(1200) {
+   margin-top: 0;
+  }
+ }
+
+ .order-xl-first {
+  margin-bottom: 5.2rem;
+  margin-top: 4.9rem;
+  @include media-breakpoint-up(768) {
+   margin-bottom: 2.1rem;
+   margin-top: 4rem;
+  }
+  @include media-breakpoint-up(992) {
+   margin-bottom: 2.1rem;
+   margin-top: 5rem;
+  }
+
+  a:nth-of-type(3) {
+   margin-top: 4rem;
+   @include media-breakpoint-up(576) {
+    margin-top: 3.9rem;
+   }
+   @include media-breakpoint-up(768) {
+    margin-top: 4rem;
+   }
+   @include media-breakpoint-up(1200) {
+    margin-top: 5.2rem;
+   }
+  }
+ }
+
+ h1,
+ h2,
+ h3 a {
+  color: $gray-dark;
+ }
+
+ h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  @include media-breakpoint-up(576) {
+   font-size: 2.3rem;
+   margin-bottom: 1.2rem;
+   margin-top: 1.7rem;
+  }
+  @include media-breakpoint-up(768) {
+   font-size: 2.5rem;
+   margin-bottom: 1.4rem;
+   margin-top: 1.9rem;
+  }
+  @include media-breakpoint-up(1200) {
+   font-size: 2.8rem;
+   margin-bottom: 1.3rem;
+  }
+ }
+
+ a h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  margin-top: 1.3rem;
+  @include media-breakpoint-up(576) {
+   font-size: 1.5rem;
+  }
+  @include media-breakpoint-up(768) {
+   font-size: 1.4rem;
+  }
+  @include media-breakpoint-up(992) {
+   font-size: 1.5rem;
+  }
+  @include media-breakpoint-up(1200) {
+   font-size: 1.35rem;
+  }
+ }
+
+ .links-only h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  @include media-breakpoint-up(768) {
+   margin-bottom: 2.25rem;
+  }
+ }
+
+ h3 {
+  font-size: 1.1rem;
+  line-height: 1.53rem;
+  margin-top: 0;
+
+  &:not(:last-of-type) {
+   margin-bottom: 3.2rem;
+   @include media-breakpoint-up(576) {
+    margin-bottom: 4rem;
+   }
+   @include media-breakpoint-up(1200) {
+    margin-bottom: 3.2rem;
+   }
+  }
+ }
+
+ a[href^="/ygeia/"]:focus h1,
+ a[href^="/ygeia/"]:hover h1,
+ a[href^="/ygeia/"]:active h1,
+ a[href^="/ygeia/"]:focus h2,
+ a[href^="/ygeia/"]:hover h2,
+ a[href^="/ygeia/"]:active h2,
+ h3 a[href^="/ygeia/"]:focus,
+ h3 a[href^="/ygeia/"]:hover,
+ h3 a[href^="/ygeia/"]:active {
+  color: $green;
+ }
+
+ a[href^="/omorfia/"]:focus h1,
+ a[href^="/omorfia/"]:hover h1,
+ a[href^="/omorfia/"]:active h1,
+ a[href^="/omorfia/"]:focus h2,
+ a[href^="/omorfia/"]:hover h2,
+ a[href^="/omorfia/"]:active h2,
+ h3 a[href^="/omorfia/"]:focus,
+ h3 a[href^="/omorfia/"]:hover,
+ h3 a[href^="/omorfia/"]:active {
+  color: $orange;
+ }
+}
+
+// CHROME ONLY
+.chrome .cover .order-xl-first a:nth-of-type(3) {
+ @include media-breakpoint-up(1200) {
+  margin-top: 4.9rem;
+ }
+}
+.chrome {
+ .cover h3 {
+  @include media-breakpoint-up(992) {
+   line-height: 1.43rem;
+  }
+ }
+
+ .show-item /* Show extra h3 on Chrome/Chromium */ {
+  @include media-breakpoint-up(992) {
+   display: block !important;
+  }
+  &:after {
+   @include media-breakpoint-up(992) {
+    display: none !important;
+   }
+  }
+ }
+
+ .show-dec:after {
+  @include media-breakpoint-up(992) {
+   display: block !important;
+  }
+ }
+
+ .cover .order-xl-first a:nth-of-type(3) {
+  @include media-breakpoint-up(1200) {
+   margin-top: 4.9rem;
+  }
+ }
+}

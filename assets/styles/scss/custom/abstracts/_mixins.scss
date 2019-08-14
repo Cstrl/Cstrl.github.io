@@ -1,0 +1,6 @@
+// Breakpoint for custom screen sizes
+@mixin media-breakpoint-up($custom) {
+ @media (min-width: $custom+"px") {
+  @content;
+ }
+}

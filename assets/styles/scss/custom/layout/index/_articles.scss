@@ -1,0 +1,77 @@
+.articles {
+ margin-top: 5.5rem;
+ @include media-breakpoint-up(576) {
+  margin-top: 4rem;
+ }
+ @include media-breakpoint-up(768) {
+  margin-top: 6.4rem;
+ }
+ @include media-breakpoint-up(992) {
+  margin-top: 7rem;
+ }
+
+ .col-12 {
+  /* Distance between article items */
+  margin-bottom: 2.9rem;
+  @include media-breakpoint-up(576) {
+   margin-bottom: 3.9rem;
+  }
+  @include media-breakpoint-up(768) {
+   margin-bottom: 3.5rem;
+  }
+
+  &:first-of-type {
+   margin-top: 1.5rem;
+  }
+
+  &:nth-of-type(2) {
+   @include media-breakpoint-up(768) {
+    margin-top: 1.5rem;
+   }
+  }
+
+  &:nth-of-type(3) {
+   @include media-breakpoint-up(992) {
+    margin-top: 1.5rem;
+   }
+  }
+
+  &:last-of-type {
+   @include media-breakpoint-up(768) {
+    display: none; /* Hide last item so that items-with-text number is even */
+   }
+   @include media-breakpoint-up(992) {
+    display: block;
+   }
+  }
+
+  a[href^="/ygeia/"]:focus h3,
+  a[href^="/ygeia/"]:hover h3,
+  a[href^="/ygeia/"]:active h3 {
+   color: $green;
+  }
+
+  a[href^="/omorfia/"]:focus h3,
+  a[href^="/omorfia/"]:hover h3,
+  a[href^="/omorfia/"]:active h3 {
+   color: $orange;
+  }
+ }
+
+ a h3 {
+  /* Same font-size/margin-top/margin-bottom as categories>articles and article>related */
+  color: $gray-dark;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  @include media-breakpoint-up(576) {
+   font-size: 1.7rem;
+   margin-bottom: 1.2rem;
+   margin-top: 1.7rem;
+  }
+  @include media-breakpoint-up(768) {
+   margin-bottom: 1rem;
+   margin-top: 1.5rem;
+  }
+ }
+}

@@ -1,0 +1,74 @@
+.barticles,
+.harticles {
+ margin-top: 2.5rem;
+
+ div  /* Distance between article items */ {
+  margin-bottom: 2.9rem;
+  @include media-breakpoint-up(576) {
+   margin-bottom: 3.9rem;
+  }
+  @include media-breakpoint-up(768) {
+   margin-bottom: 3.45rem;
+  }
+ }
+
+ a h3 {
+  color: $gray-dark;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  @include media-breakpoint-up(576) {
+   font-size: 1.7rem;
+   margin-bottom: 1.2rem;
+   margin-top: 1.7rem;
+  }
+  @include media-breakpoint-up(768) {
+   margin-bottom: 1rem;
+   margin-top: 1.5rem;
+  }
+ }
+
+ .col-12 a[href^="/ygeia/"]:focus h3,
+ .col-12 a[href^="/ygeia/"]:hover h3,
+ .col-12 a[href^="/ygeia/"]:active h3 {
+  color: $green;
+ }
+
+ .col-12 a[href^="/omorfia/"]:focus h3,
+ .col-12 a[href^="/omorfia/"]:hover h3,
+ .col-12 a[href^="/omorfia/"]:active h3 {
+  color: $orange;
+ }
+}
+
+.updates {
+ @include media-breakpoint-up(768) {
+  margin-bottom: 2rem; /* Making up for the hidden a2a buttons and their top/bottom margin */
+ }
+}
+
+.related {
+ @include media-breakpoint-up(576) {
+  margin-top: 6.85rem;
+ }
+
+ div {
+  @include media-breakpoint-up(576) {
+   margin-bottom: 2.15rem;
+  }
+
+  &:first-of-type {
+   @include media-breakpoint-up(576) {
+    margin-top: 1.65rem;
+   }
+  }
+ }
+
+ a h3 {
+  @include media-breakpoint-up(576) {
+   font-size: 1.7rem;
+   margin-bottom: 1.2rem;
+   margin-top: 1.7rem;
+  }
+ }
+}
