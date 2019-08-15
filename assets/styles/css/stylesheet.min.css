@@ -5831,13 +5831,7 @@ p ~ ul.blist li:first-of-type {
   float: left; }
 
 p ~ ul.blist li:not(:first-child) {
-  margin-left: 3.8rem; }
-  @media (min-width: 768px) {
-    p ~ ul.blist li:not(:first-child) {
-      margin-left: 4.2rem; } }
-  @media (min-width: 1200px) {
-    p ~ ul.blist li:not(:first-child) {
-      margin-left: 4.5rem; } }
+  margin-left: 4rem; }
 
 /* Το ξέρατε ότι... */
 article .card:last-of-type {
